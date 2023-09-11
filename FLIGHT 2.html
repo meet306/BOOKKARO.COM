@@ -1,0 +1,3344 @@
+
+<!DOCTYPE HTML>
+<html lang="en">
+    <head>
+    <meta charset="UTF-8"/>
+    <title>About Us | Global Airline. Indian Heart | Air India</title>
+    
+    <meta name="description" content="With over 90 years of service, read about how the Tata group strives to build Air India as a world-class airline that blends innovative technology with vintage hospitality."/>
+    <meta name="template" content="page-content11"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    
+
+    
+    
+<link rel="canonical" href="https://www.airindia.com/in/en/about-us.html"/>
+
+
+    
+<!-- <script src="https://assets.adobedtm.com/d8581f94b285/4e9e4938e0dc/launch-43a3ffd400eb-development.min.js"
+  async></script> -->
+<link rel="icon" type="image/x-icon" href="/content/dam/air-india/image/favicon.ico"/>
+
+
+
+
+
+  
+    <link rel="stylesheet" href="/etc.clientlibs/air-india/clientlibs/clientlib-base.lc-0216c88c697f3d19aea0bba64d371fa6-lc.min.css" type="text/css">
+
+
+
+
+<!-- <script src="https://assets.adobedtm.com/d8581f94b285/c7a05afc4d3f/launch-6f1d12654429-staging.min.js" async></script> -->
+<script>
+  document.onreadystatechange = () => {
+    if (document.readyState !== "loading") {
+      function generateCodeVerifier() {
+        const charset =
+          "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789-._~";
+        const codeVerifierLength = 64;
+
+        let codeVerifier = "";
+        for (let i = 0; i < codeVerifierLength; i++) {
+          const randomIndex = Math.floor(Math.random() * charset.length);
+          codeVerifier += charset.charAt(randomIndex);
+        }
+
+        return codeVerifier;
+      }
+
+      function base64UrlEncode(str) {
+        let base64 = btoa(str);
+        base64 = base64
+          .replace(/\+/g, "-")
+          .replace(/\//g, "_")
+          .replace(/=+$/, "");
+        return base64;
+      }
+
+      function generateCodeChallenge(codeVerifier) {
+        const sha256Digest = async (message) => {
+          const encoder = new TextEncoder();
+          const data = encoder.encode(message);
+          const hashBuffer = await crypto.subtle.digest("SHA-256", data);
+          const hashArray = Array.from(new Uint8Array(hashBuffer));
+          const hashHex = hashArray
+            .map((byte) => byte.toString(16).padStart(2, "0"))
+            .join("");
+          return hashHex;
+        };
+
+        return sha256Digest(codeVerifier).then(base64UrlEncode);
+      }
+
+      let headerUrlParams = window.location.origin;
+      let script = document.createElement("script");
+      script.type = "text/javascript";
+      getText(
+        headerUrlParams +
+        "/content/air-india/in/en/cookie-policy/jcr:content/root/container/container/envconfig.model.json"
+      );
+
+      let headerEnvParam = {};
+      async function getText(file) {
+        await fetch(file)
+          .then((res) => res.json())
+          .then((response) => {
+            headerEnvParam = response;
+          });
+
+        let ltyscript = document.createElement("script");
+        ltyscript.type = "text/javascript";
+        ltyscript.async = true;
+
+        if (headerEnvParam.environment === "dev" || headerEnvParam.environment === "qa") {
+          script.src =
+            "https://assets.adobedtm.com/d8581f94b285/4e9e4938e0dc/launch-43a3ffd400eb-development.min.js";
+          document.getElementsByTagName("head")[0].appendChild(script);
+
+          if (headerUrlParams.indexOf("loyalty-dev") > -1) {
+            ltyscript.src =
+              "https://assets.adobedtm.com/d8581f94b285/faf240e8bd25/launch-9cc17d6cd3df-development.min.js";
+            document.getElementsByTagName("head")[0].appendChild(ltyscript);
+          }
+        }
+        if (headerEnvParam.environment === "stage") {
+          script.src =
+            "https://assets.adobedtm.com/d8581f94b285/4e9e4938e0dc/launch-ce0d5a5ddfb7-staging.min.js ";
+          document.getElementsByTagName("head")[0].appendChild(script);
+
+          if (headerUrlParams.indexOf("loyalty-staging") > -1) {
+            ltyscript.src =
+              "https://assets.adobedtm.com/d8581f94b285/faf240e8bd25/launch-cff359940e67-staging.min.js";
+            document.getElementsByTagName("head")[0].appendChild(ltyscript);
+          }
+        }
+        if (headerEnvParam.environment === "prod") {
+          script.src =
+            "https://assets.adobedtm.com/d8581f94b285/4e9e4938e0dc/launch-4f07f2129862.min.js ";
+          document.getElementsByTagName("head")[0].appendChild(script);
+
+          if (headerUrlParams.indexOf("loyalty.airindia") > -1) {
+            ltyscript.src =
+              "https://assets.adobedtm.com/d8581f94b285/faf240e8bd25/launch-b6ba1adaffd3.min.js";
+            document.getElementsByTagName("head")[0].appendChild(ltyscript);
+          }
+        }
+
+        let config = {
+          TENANT: "",
+          CLIENTID: "",
+          REDIRECT_URI: "",
+        };
+
+        if (headerEnvParam.environment === "prod") {
+          config.TENANT = "AIFlyingReturns";
+          config.CLIENTID = "ac5c8be3-c829-4db6-8eb7-aa4a37c61cbc";
+          config.REDIRECT_URI =
+            "https://loyalty.airindia.com/in/en/account-summary.html";
+        } else if (headerEnvParam.environment === "stage") {
+          config.TENANT = "flyingreturnstest";
+          config.CLIENTID = "35463fb8-025d-4996-ade0-9bcd290cf5e2";
+          config.REDIRECT_URI =
+            "https://loyalty-staging.airindia.com/in/en/account-summary.html";
+        } else if (headerEnvParam.environment === "qa") {
+          config.TENANT = "flyingreturnstest";
+          config.CLIENTID = "35463fb8-025d-4996-ade0-9bcd290cf5e2";
+          config.REDIRECT_URI =
+            "https://loyalty-qa.airindia.com/in/en/account-summary.html";
+        } else {
+          config.TENANT = "flyingreturnstest";
+          config.CLIENTID = "35463fb8-025d-4996-ade0-9bcd290cf5e2";
+          config.REDIRECT_URI =
+            "https://loyalty-dev.airindia.com/in/en/account-summary.html";
+        }
+        const codeVerifier = generateCodeVerifier();
+        generateCodeChallenge(codeVerifier).then((codeChallenge) => {
+          const createAccountUrl =
+            `https://` +
+            config.TENANT +
+            `.b2clogin.com/` +
+            config.TENANT +
+            `.onmicrosoft.com/oauth2/v2.0/authorize?p=B2C_1A_SIGNUP_SIGNIN&client_id=` +
+            config.CLIENTID +
+            `&code_challenge=` +
+            codeChallenge +
+            `&code_challenge_method=S256&nonce=` +
+            codeVerifier +
+            `&redirect_uri=` +
+            config.REDIRECT_URI +
+            `&scope=openid%20offline_access%20profile%20phone%20email&response_type=code&prompt=login&option=signupflow`;
+          const signupbtn = document.querySelectorAll(".enrollnowlink");
+          if (signupbtn.length > 0) {
+            signupbtn.forEach((el) => {
+              el.setAttribute("href", createAccountUrl);
+            });
+          }
+        });
+      }
+    }
+  };
+  document.addEventListener("DOMContentLoaded", () => {
+ 
+    var temp = document.getElementsByTagName("meta");
+for ( var i = 0 ; i< temp.length; i++){
+ if (  temp[i].hasAttribute("property") && temp[i].getAttribute("property") == "og:type" && temp[i].getAttribute("content") == null ){
+      temp[i].setAttribute("content","website");
+    }
+    if (  temp[i].hasAttribute("property") && temp[i].getAttribute("property") == "og:title" && temp[i].getAttribute("content") == null ){
+      temp[i].setAttribute("content","https://www.airindia.com");
+    }
+    if (  temp[i].hasAttribute("property") && temp[i].getAttribute("property") == "og:url" && temp[i].getAttribute("content") == null ){
+      temp[i].setAttribute("content","https://www.airindia.com");
+    }
+    if (  temp[i].hasAttribute("property") && temp[i].getAttribute("property") == "og:description" && temp[i].getAttribute("content") == null ){
+      temp[i].setAttribute("content","Search for international and domestic flights to your preferred destination on Air India. One-way, round -trip or multi-city stopovers, choose what works for you.");
+    }
+    if (  temp[i].hasAttribute("property") && temp[i].getAttribute("property") == "og:image" && temp[i].getAttribute("content") == null ){
+      temp[i].setAttribute("content","https://www.airindia.com/adobe/dynamicmedia/deliver/dm-aid--b95cad14-fa40-44d8-aeab-db462d61e465/flying-returns.webp");
+    }
+    if (  temp[i].hasAttribute("property") && temp[i].getAttribute("property") == "twitter:domain" && temp[i].getAttribute("content") == null ){
+      temp[i].setAttribute("content","airindia.com");
+    }
+    if (  temp[i].hasAttribute("property") && temp[i].getAttribute("property") == "twitter:url" && temp[i].getAttribute("content") == null ){
+      temp[i].setAttribute("content","https://www.airindia.com");
+    }
+    if (  temp[i].hasAttribute("name") && temp[i].getAttribute("name") == "twitter:card" && temp[i].getAttribute("content") == null ){
+      temp[i].setAttribute("content","summary_large_image");
+    }
+    if (  temp[i].hasAttribute("name") && temp[i].getAttribute("name") == "twitter:title" && temp[i].getAttribute("content") == null ){
+      temp[i].setAttribute("content","Air India");
+    }
+    if (  temp[i].hasAttribute("name") && temp[i].getAttribute("name") == "twitter:site" && temp[i].getAttribute("content") == null ){
+      temp[i].setAttribute("content","@airindia");
+    }
+    if (  temp[i].hasAttribute("name") && temp[i].getAttribute("name") == "twitter:description" && temp[i].getAttribute("content") == null ){
+      temp[i].setAttribute("content","Search for international and domestic flights to your preferred destination on Air India. One-way, round -trip or multi-city stopovers, choose what works for you.");
+    }
+    if (  temp[i].hasAttribute("name") && temp[i].getAttribute("name") == "twitter:image" && temp[i].getAttribute("content") == null ){
+      temp[i].setAttribute("content","https://www.airindia.com/adobe/dynamicmedia/deliver/dm-aid--b95cad14-fa40-44d8-aeab-db462d61e465/flying-returns.webp");
+    }
+  }
+
+
+});
+
+
+
+</script>
+
+<!-- Facebook Meta Tags -->
+<meta property="og:url"/>
+<meta property="og:type"/>
+<meta property="og:title"/>
+<meta property="og:description"/>
+<meta property="og:image"/>
+
+<!-- Twitter Meta Tags -->
+<meta name="twitter:card"/>
+<meta property="twitter:domain"/>
+<meta property="twitter:url"/>
+<meta name="twitter:title"/>
+<meta name="twitter:site"/>
+<meta name="twitter:description"/>
+<meta name="twitter:image"/>
+    
+    
+    
+
+    
+
+    
+    <script src="/etc.clientlibs/air-india/clientlibs/clientlib-dependencies.lc-d41d8cd98f00b204e9800998ecf8427e-lc.min.js"></script>
+
+
+    
+    <link rel="stylesheet" href="/etc.clientlibs/air-india/clientlibs/clientlib-dependencies.lc-d41d8cd98f00b204e9800998ecf8427e-lc.min.css" type="text/css">
+<link rel="stylesheet" href="/etc.clientlibs/air-india/clientlibs/clientlib-site.lc-6530e118f5319c06cfde7479c259d011-lc.min.css" type="text/css">
+
+
+    
+    
+    <script async src="/etc.clientlibs/core/wcm/components/commons/datalayer/v1/clientlibs/core.wcm.components.commons.datalayer.v1.lc-904d3c2f1e821ab45124d66de422b409-lc.min.js"></script>
+
+
+
+    
+    
+
+<script>(window.BOOMR_mq=window.BOOMR_mq||[]).push(["addVar",{"rua.upush":"false","rua.cpush":"false","rua.upre":"false","rua.cpre":"false","rua.uprl":"false","rua.cprl":"false","rua.cprf":"false","rua.trans":"","rua.cook":"false","rua.ims":"false","rua.ufprl":"false","rua.cfprl":"false","rua.isuxp":"false","rua.texp":"norulematch"}]);</script>
+                              <script>!function(e){var n="https://s.go-mpulse.net/boomerang/";if("True"=="True")e.BOOMR_config=e.BOOMR_config||{},e.BOOMR_config.PageParams=e.BOOMR_config.PageParams||{},e.BOOMR_config.PageParams.pci=!0,n="https://s2.go-mpulse.net/boomerang/";if(window.BOOMR_API_key="V3XFJ-864Q8-6AQVE-YG3DE-YNFUD",function(){function e(){if(!o){var e=document.createElement("script");e.id="boomr-scr-as",e.src=window.BOOMR.url,e.async=!0,i.parentNode.appendChild(e),o=!0}}function t(e){o=!0;var n,t,a,r,d=document,O=window;if(window.BOOMR.snippetMethod=e?"if":"i",t=function(e,n){var t=d.createElement("script");t.id=n||"boomr-if-as",t.src=window.BOOMR.url,BOOMR_lstart=(new Date).getTime(),e=e||d.body,e.appendChild(t)},!window.addEventListener&&window.attachEvent&&navigator.userAgent.match(/MSIE [67]\./))return window.BOOMR.snippetMethod="s",void t(i.parentNode,"boomr-async");a=document.createElement("IFRAME"),a.src="about:blank",a.title="",a.role="presentation",a.loading="eager",r=(a.frameElement||a).style,r.width=0,r.height=0,r.border=0,r.display="none",i.parentNode.appendChild(a);try{O=a.contentWindow,d=O.document.open()}catch(_){n=document.domain,a.src="javascript:var d=document.open();d.domain='"+n+"';void(0);",O=a.contentWindow,d=O.document.open()}if(n)d._boomrl=function(){this.domain=n,t()},d.write("<bo"+"dy onload='document._boomrl();'>");else if(O._boomrl=function(){t()},O.addEventListener)O.addEventListener("load",O._boomrl,!1);else if(O.attachEvent)O.attachEvent("onload",O._boomrl);d.close()}function a(e){window.BOOMR_onload=e&&e.timeStamp||(new Date).getTime()}if(!window.BOOMR||!window.BOOMR.version&&!window.BOOMR.snippetExecuted){window.BOOMR=window.BOOMR||{},window.BOOMR.snippetStart=(new Date).getTime(),window.BOOMR.snippetExecuted=!0,window.BOOMR.snippetVersion=12,window.BOOMR.url=n+"V3XFJ-864Q8-6AQVE-YG3DE-YNFUD";var i=document.currentScript||document.getElementsByTagName("script")[0],o=!1,r=document.createElement("link");if(r.relList&&"function"==typeof r.relList.supports&&r.relList.supports("preload")&&"as"in r)window.BOOMR.snippetMethod="p",r.href=window.BOOMR.url,r.rel="preload",r.as="script",r.addEventListener("load",e),r.addEventListener("error",function(){t(!0)}),setTimeout(function(){if(!o)t(!0)},3e3),BOOMR_lstart=(new Date).getTime(),i.parentNode.appendChild(r);else t(!1);if(window.addEventListener)window.addEventListener("load",a,!1);else if(window.attachEvent)window.attachEvent("onload",a)}}(),"".length>0)if(e&&"performance"in e&&e.performance&&"function"==typeof e.performance.setResourceTimingBufferSize)e.performance.setResourceTimingBufferSize();!function(){if(BOOMR=e.BOOMR||{},BOOMR.plugins=BOOMR.plugins||{},!BOOMR.plugins.AK){var n=""=="true"?1:0,t="cookiepresent",a="eqeubaedcjl42jqacqhqiaaaabsp5k5k-f-845807239-clienttons-s.akamaihd.net",i="false"=="true"?2:1,o={"ak.v":"36","ak.cp":"1473155","ak.ai":parseInt("855164",10),"ak.ol":"0","ak.cr":131,"ak.ipv":6,"ak.proto":"h2","ak.rid":"10c2b39f","ak.r":35991,"ak.a2":n,"ak.m":"dsca","ak.n":"essl","ak.bpcip":"2409:4080:8312:57cd::","ak.cport":53119,"ak.gh":"184.84.233.223","ak.quicv":"","ak.tlsv":"tls1.3","ak.0rtt":"","ak.csrc":"-","ak.acc":"","ak.t":"1694411690","ak.ak":"hOBiQwZUYzCg5VSAfCLimQ==thFEBxgDhzQk7Bf3tMipvWNetljOv3juIWp2A4tqVeNsfPTLfu+92nOGekj4O2LQIbbtCjH9eiimB7YKjb3kZc5NESF2tJAd+kLCw3m+0nWzDN1XKNEUyeHPSRKrrljFjWgR4n1aUqu8dcYLAHUJar3cDddweDfv4sORhtfjWf77Y7qqGxOeb7bUYeBVky33iCOqmmcJdEpeIkgse7JaKdMwO41blrCrzNLs8Yv31DZWx/WqyXdEt8JSM2vfVbrq4agfc5C84/Fi/rX1ZXdnpAeGbVRgfgHzKx8gypXvobmFxaGNaZlGeKcCVAaLnUpeOLFlU3J2eS65si06/tiUi/cM3zH32A2vE5ty/gscim6Uf6ESBI9i7qPJqIs/ZECFRkO+2EvAhhxdeiwqvFCoTfymYDvWjawUCk9RYpIaxs8=","ak.pv":"28","ak.dpoabenc":"","ak.tf":i};if(""!==t)o["ak.ruds"]=t;var r={i:!1,av:function(n){var t="http.initiator";if(n&&(!n[t]||"spa_hard"===n[t]))o["ak.feo"]=void 0!==e.aFeoApplied?1:0,BOOMR.addVar(o)},rv:function(){var e=["ak.bpcip","ak.cport","ak.cr","ak.csrc","ak.gh","ak.ipv","ak.m","ak.n","ak.ol","ak.proto","ak.quicv","ak.tlsv","ak.0rtt","ak.r","ak.acc","ak.t","ak.tf"];BOOMR.removeVar(e)}};BOOMR.plugins.AK={akVars:o,akDNSPreFetchDomain:a,init:function(){if(!r.i){var e=BOOMR.subscribe;e("before_beacon",r.av,null,null),e("onbeacon",r.rv,null,null),r.i=!0}return this},is_complete:function(){return!0}}}}()}(window);</script></head>
+    <body class="page basicpage" id="about-us" data-cmp-link-accessibility-enabled data-cmp-link-accessibility-text="opens in a new tab" data-cmp-data-layer-enabled>
+        <script>
+          window.adobeDataLayer = window.adobeDataLayer || [];
+          adobeDataLayer.push({
+              page: JSON.parse("{\x22about\u002Dus\x22:{\x22@type\x22:\x22air\u002Dindia\/components\/page\x22,\x22repo:modifyDate\x22:\x222023\u002D08\u002D02T05:18:55Z\x22,\x22dc:title\x22:\x22About Us | Global Airline. Indian Heart | Air India\x22,\x22dc:description\x22:\x22With over 90 years of service, read about how the Tata group strives to build Air India as a world\u002Dclass airline that blends innovative technology with vintage hospitality.\x22,\x22xdm:template\x22:\x22\/conf\/air\u002Dindia\/settings\/wcm\/templates\/page\u002Dcontent11\x22,\x22xdm:language\x22:\x22en\x22,\x22xdm:tags\x22:[],\x22repo:path\x22:\x22\/content\/air\u002Dindia\/in\/en\/about\u002Dus.html\x22}}"),
+              event:'cmp:show',
+              eventInfo: {
+                  path: 'page.about\u002Dus'
+              }
+          });
+        </script>
+        
+        
+            
+
+
+
+
+            
+<div class="root container responsivegrid">
+
+    
+    <div id="container-d4eff18d20" class="cmp-container">
+        
+
+
+<div class="aem-Grid aem-Grid--12 aem-Grid--default--12 ">
+    
+    <header class="experiencefragment aem-GridColumn aem-GridColumn--default--12">
+<div id="experiencefragment-f610d417b3" class="cmp-experiencefragment cmp-experiencefragment--header">
+
+
+    
+    <div id="header" class="cmp-container">
+        
+
+
+<div class="aem-Grid aem-Grid--12 aem-Grid--default--12 ">
+    
+    <div class="container responsivegrid aem-GridColumn aem-GridColumn--default--12">
+
+    
+    
+    
+    <div id="container-db13e27ed7" class="cmp-container">
+        
+        <div class="headerMenu"><noscript> <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TNLHQDB" height="0" width="0" style="display:none;visibility:hidden" title="Google Tag Manager"></iframe> </noscript>
+
+  <section id="headerhome1" class="header"> <a tabindex="0" class="skip-main" href="#content-page">Skip to Main
+      Content</a>
+    <div class="container-bs aic header-item-wrapper">
+      <div class="header-item item-left"> <a id="topMenulogoLight" href="/" class="logo-img light"><img src="/content/dam/air-india/logos/airindia-logo-white.svg" alt="Air India Logo" title="Air India Logo" height="50" width="100%"/></a> <a id="topMenulogoDark" href="/" class="logo-img dark"><img src="/content/dam/air-india/logos/airindia-red.svg" alt="Air India Logo" title="Air India Logo" height="50" width="100%"/></a> </div>
+      <div class="header-item item-center">
+        <div class="top-menu-wrapper">
+          <ul class="top-menu">
+            
+              <li>
+                 <a href="#" id="search-button" class="search-button" data-bs-toggle="modal" data-bs-target="#searchModal"> <img src="/content/dam/air-india/header/search.svg" alt="lightSearchAlt" title="lightSearchAlt" class="light"/> <img src="/content/dam/air-india/header/search_dark.svg" alt="darkSearchAlt" title="darkSearchAlt" class="dark"/>
+                    Search </a> 
+                
+                
+              </li>
+            
+              <li>
+                
+                 <a id="topMenu1" href="javascript:void(0)" class=""> <img src="/content/dam/air-india/header/support.svg" alt="lightSupAlt" title="lightSupAlt" class="light"/> <img src="/content/dam/air-india/header/support_dark.svg" alt="darkSupAlt" title="darkSupAlt" class="dark"/> Support </a>
+                  <ul>
+                    
+                      
+                        <li> <a id="topMenu1submenu0" href="/in/en/customer-support.html">Customer Support</a> </li>
+                      
+                      
+                    
+                      
+                        <li> <a id="topMenu1submenu1" href="/in/en/frequently-asked-questions.html">FAQ</a> </li>
+                      
+                      
+                    
+                  </ul>
+                
+                
+              </li>
+            
+              <li>
+                
+                
+                 
+                  <a href="https://loyalty.airindia.com" id="signIn" class="" target="_blank"> <img width="18" height="18" src="/content/dam/air-india/header/login.svg" alt="loginLightAlt" title="loginLightAlt" class="light"/> <img width="18" height="18" src="/content/dam/air-india/header/login_dark.svg" alt="loginDarkAlt" title="loginDarkAlt" class="dark"/>
+                    <span>Sign In</span> </a>
+                  <div id="signOut" class="subloginDropdown d-none"> <a class=""> <img src="/content/dam/air-india/header/login_dark.svg" alt="loginDarkAlt" class="dark"/> <span></span> </a>
+                    <div class="loginDrop" style="display: none;">
+                      <h3 class="userWelcome"></h3>
+                      <p class="userCardDetails"></p>
+                      <p><b class="userPoints"></b></p>
+                      <div class="logindropbtn">
+                        <button type="button" class="myAccbtn" onclick="redirectToAccount()">My account</button> 
+                        <button type="button" class="changePwdbtn" onclick="changePassword()">Change Password</button>
+                        <button type="button" class="logoutbtn" onclick="signOut()">Log out</button>
+                      </div>
+                    </div>
+                  </div>
+                
+              </li>
+            
+          </ul>
+          <div class="menu-backdrop"></div>
+          <ul class="main-menu">
+            <div class="mobile-search">
+              <div class="searchMobileIcon"> <label for="searchMobile" class="sr-only">Search</label> <input type="text" id="searchMobile"/> <a class="search-mobile-icon"> <svg width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M20.5801 19.29L16.8375 15.61C18.2903 13.8144 18.9938 11.5353 18.8035 9.24133C18.6131 6.94733 17.5433 4.81281 15.8141 3.27667C14.0849 1.74053 11.8277 0.919537 9.50656 0.982497C7.18545 1.04546 4.97689 1.98759 3.335 3.61517C1.69311 5.24275 0.742696 7.43207 0.679182 9.73295C0.615668 12.0338 1.44388 14.2714 2.99352 15.9855C4.54317 17.6997 6.69645 18.7601 9.01062 18.9488C11.3248 19.1375 13.6239 18.4401 15.4353 17L19.1477 20.68C19.2414 20.7738 19.353 20.8482 19.4759 20.8989C19.5989 20.9497 19.7307 20.9758 19.8639 20.9758C19.9971 20.9758 20.1289 20.9497 20.2519 20.8989C20.3748 20.8482 20.4864 20.7738 20.5801 20.68C20.762 20.4936 20.8636 20.2444 20.8636 19.985C20.8636 19.7257 20.762 19.4765 20.5801 19.29ZM9.77599 17C8.37935 17 7.01407 16.5895 5.85281 15.8203C4.69154 15.0511 3.78645 13.9579 3.25198 12.6788C2.7175 11.3997 2.57766 9.99226 2.85013 8.63439C3.1226 7.27653 3.79515 6.02925 4.78272 5.05028C5.7703 4.07131 7.02854 3.40463 8.39835 3.13453C9.76815 2.86443 11.188 3.00306 12.4783 3.53287C13.7686 4.06268 14.8715 4.95989 15.6474 6.11103C16.4234 7.26218 16.8375 8.61556 16.8375 10C16.8375 11.8565 16.0935 13.637 14.7692 14.9498C13.445 16.2625 11.6488 17 9.77599 17Z" fill="#D9000D">
+                  </svg> </a> </div>
+            </div>
+            <div class="mobile-menu-head">
+              <div class="go-back"> <i class="fa fa-angle-right"></i>Main Menu </div>
+              <div class="current-menu-title"></div>
+              <div class="mobile-menu-close">&times;</div>
+            </div>
+            
+              <li class="menu-with-submenu"> <a id="headernav0" href="#" onclick="return false" class="aic">Book &amp; Manage<i class="fas fa-angle-down"></i></a>
+                <ul class="sub-menu mega-menu mega-menu-column-4">
+                  <div class="container-bs">
+                    
+                      <div class="mega-item ">
+                        <div class="mega-col-title">
+                          <div> <a tabindex="0" id="headernav0menu0" href="/in/en/book.html">
+                              Book </a> </div>
+                          
+                        </div>
+                        <ul class="">
+                          
+                            <li>
+                               <a id="header0menu0link0" href="/in/en/book/search-flights.html">Search Flights </a>
+                              
+                              
+                            </li>
+                          
+                            <li>
+                               <a id="header0menu0link1" href="/in/en/book/corporate-house-booking.html">Corporate Travel Programme </a>
+                              
+                              
+                            </li>
+                          
+                            <li>
+                               <a id="header0menu0link2" href="/in/en/book/group-ticket-booking.html">Group Booking </a>
+                              
+                              
+                            </li>
+                          
+                            <li>
+                               <a id="header0menu0link3" href="/in/en/book/concessionary-fares.html">Concessionary Fares </a>
+                              
+                              
+                            </li>
+                          
+                            <li>
+                               <a id="header0menu0link4" href="/in/en/book/flight-schedule.html">Flight Schedule </a>
+                              
+                              
+                            </li>
+                          
+                        </ul>
+                      </div>
+                    
+                      <div class="mega-item ">
+                        <div class="mega-col-title">
+                          <div> <a tabindex="0" id="headernav0menu1" href="/in/en/manage.html">
+                              Manage </a> </div>
+                          
+                        </div>
+                        <ul class="">
+                          
+                            <li>
+                               <a id="header0menu1link0" href="/in/en/manage/web-checkin.html">Check In Online </a>
+                              
+                              
+                            </li>
+                          
+                            <li>
+                               <a id="header0menu1link1" href="/in/en/manage/booking.html">Manage Booking </a>
+                              
+                              
+                            </li>
+                          
+                            <li>
+                               <a id="header0menu1link2" href="/in/en/manage/select-upgrade-seat.html">Seat Selection &amp; Upgrades </a>
+                              
+                              
+                            </li>
+                          
+                            <li>
+                               <a id="header0menu1link3" href="/in/en/manage/self-reaccomodation.html">Self-Service Re-accommodation </a>
+                              
+                              
+                            </li>
+                          
+                            <li>
+                               <a id="header0menu1link4" href="/in/en/manage/request-refund.html">Request Refund </a>
+                              
+                              
+                            </li>
+                          
+                        </ul>
+                      </div>
+                    
+                      <div class="mega-item ">
+                        <div class="mega-col-title">
+                          
+                          <div class="hide-for-mobile">
+                            <p>&nbsp</p>
+                          </div>
+                        </div>
+                        <ul class="">
+                          
+                            <li>
+                               <a id="header0menu2link0" href="/in/en/manage/flight-status.html">Flight Status </a>
+                              
+                              
+                            </li>
+                          
+                        </ul>
+                      </div>
+                    
+                    
+                      <div class="mega-item">
+                         <a id="header0Imagelink0" href="/in/en/experience/in-air/amenities/premium-economy.html"> <img class="img-fit lazyload" data-src="/adobe/dynamicmedia/deliver/dm-aid--833db058-4eab-4d3b-bc29-2b120b2148f4/premium-economy.webp" alt=" premium-economy" title=" premium-economy"/> </a> 
+                        
+                      </div>
+                    
+                  </div>
+                </ul>
+              </li>
+            
+              <li class="menu-with-submenu"> <a id="headernav1" href="#" onclick="return false" class="aic">Where We Fly<i class="fas fa-angle-down"></i></a>
+                <ul class="sub-menu mega-menu mega-menu-column-4">
+                  <div class="container-bs">
+                    
+                      <div class="mega-item ">
+                        <div class="mega-col-title">
+                          <div> <a tabindex="0" id="headernav1menu0" href="/in/en/destinations.html">
+                              Where We Fly </a> </div>
+                          
+                        </div>
+                        <ul class="">
+                          
+                            <li>
+                               <a id="header1menu0link0" href="/in/en/destinations/route-map.html">Route Map </a>
+                              
+                              
+                            </li>
+                          
+                            <li>
+                               <a id="header1menu0link1" href="/in/en/destinations/non-stop-international-flights.html">Nonstop International Flights </a>
+                              
+                              
+                            </li>
+                          
+                            <li>
+                               <a id="header1menu0link2" href="/in/en/destinations/newlaunch.html">Popular Flights </a>
+                              
+                              
+                            </li>
+                          
+                            <li>
+                               <a id="header1menu0link3" href="/in/en/destinations/partner-airlines.html">Partner Airlines </a>
+                              
+                              
+                            </li>
+                          
+                        </ul>
+                      </div>
+                    
+                    
+                      <div class="mega-item">
+                         <a id="header1Imagelink0" href="/in/en/destinations/newlaunch.html"> <img class="img-fit lazyload" data-src="/adobe/dynamicmedia/deliver/dm-aid--233bf7d1-ffcf-4537-9e26-a7b3b6d117a3/nnds.webp" alt="new-york-city" title="new-york-city"/> </a> 
+                        
+                      </div>
+                    
+                      <div class="mega-item">
+                         <a id="header1Imagelink1" href="/in/en/destinations/newlaunch/new-delhi-to-london.html"> <img class="img-fit lazyload" data-src="/adobe/dynamicmedia/deliver/dm-aid--9504cdb3-daca-4a56-bc5e-5afe993b1d9f/popular-destination.webp" alt="popular-destinations" title="popular-destinations"/> </a> 
+                        
+                      </div>
+                    
+                  </div>
+                </ul>
+              </li>
+            
+              <li class="menu-with-submenu"> <a id="headernav2" href="#" onclick="return false" class="aic">Prepare to Travel<i class="fas fa-angle-down"></i></a>
+                <ul class="sub-menu mega-menu mega-menu-column-4">
+                  <div class="container-bs">
+                    
+                      <div class="mega-item ">
+                        <div class="mega-col-title">
+                          <div> <a tabindex="0" id="headernav2menu0" href="/in/en/travel-information.html">
+                              Prepare to Travel </a> </div>
+                          
+                        </div>
+                        <ul class="">
+                          
+                            <li>
+                               <a id="header2menu0link0" href="/in/en/travel-information/baggage-guidelines.html">Baggage Guidelines </a>
+                              
+                              
+                            </li>
+                          
+                            <li>
+                               <a id="header2menu0link1" href="/in/en/travel-information/airport-information.html">Airport Information </a>
+                              
+                              
+                            </li>
+                          
+                            <li>
+                               <a id="header2menu0link2" href="/in/en/travel-information/visa-documents.html">Visas, Documents and Travel Tips </a>
+                              
+                              
+                            </li>
+                          
+                            <li>
+                               <a id="header2menu0link3" href="/in/en/travel-information/first-time-flyers.html">First-time Travellers, Children and Pets </a>
+                              
+                              
+                            </li>
+                          
+                            <li>
+                               <a id="header2menu0link4" href="/in/en/travel-information/health-medical-assistance.html">Health and Medical Assistance </a>
+                              
+                              
+                            </li>
+                          
+                        </ul>
+                      </div>
+                    
+                    
+                      <div class="mega-item">
+                         <a id="header2Imagelink0" href="/in/en/travel-information/baggage-guidelines/prepay-excess-baggage.html"> <img class="img-fit lazyload" data-src="/adobe/dynamicmedia/deliver/dm-aid--26a0b632-da7b-43ff-b1db-f0a2817a9fde/new-baggage-policy.webp" alt="new-baggage-policy" title="new-baggage-policy"/> </a> 
+                        
+                      </div>
+                    
+                  </div>
+                </ul>
+              </li>
+            
+              <li class="menu-with-submenu"> <a id="headernav3" href="#" onclick="return false" class="aic">Air India Experience<i class="fas fa-angle-down"></i></a>
+                <ul class="sub-menu mega-menu mega-menu-column-4">
+                  <div class="container-bs">
+                    
+                      <div class="mega-item ">
+                        <div class="mega-col-title">
+                          <div> <a tabindex="0" id="headernav3menu0" href="/in/en/experience.html">
+                              Air India Experience </a> </div>
+                          
+                        </div>
+                        <ul class="">
+                          
+                            <li>
+                               <a id="header3menu0link0" href="/in/en/experience/airport.html">At the Airport </a>
+                              
+                              
+                            </li>
+                          
+                            <li>
+                               <a id="header3menu0link1" href="/in/en/experience/in-air.html">In the Air </a>
+                              
+                              
+                            </li>
+                          
+                            <li>
+                               <a id="header3menu0link2" href="/in/en/experience/airindia-fleet.html">The Air India Fleet  </a>
+                              
+                              
+                            </li>
+                          
+                        </ul>
+                      </div>
+                    
+                    
+                      <div class="mega-item">
+                         <a id="header3Imagelink0" href="/in/en/experience/in-air/amenities/premium-economy.html"> <img class="img-fit lazyload" data-src="/adobe/dynamicmedia/deliver/dm-aid--833db058-4eab-4d3b-bc29-2b120b2148f4/premium-economy.webp" alt="premium-economy" title="premium-economy"/> </a> 
+                        
+                      </div>
+                    
+                      <div class="mega-item">
+                         <a id="header3Imagelink1" href="/in/en/app-features.html"> <img class="img-fit lazyload" data-src="/adobe/dynamicmedia/deliver/dm-aid--79345236-1f4c-40d5-8cf7-0c73a6ac972b/App promo card.webp" alt="Mobile-app-benefist-promo-card" title="Mobile-app-benefist-promo-card"/> </a> 
+                        
+                      </div>
+                    
+                  </div>
+                </ul>
+              </li>
+            
+              <li class="menu-with-submenu"> <a id="headernav4" href="#" onclick="return false" class="aic">Loyalty<i class="fas fa-angle-down"></i></a>
+                <ul class="sub-menu mega-menu mega-menu-column-4">
+                  <div class="container-bs">
+                    
+                      <div class="mega-item ">
+                        <div class="mega-col-title">
+                          <div> <a tabindex="0" id="headernav4menu0" href="/in/en/flying-returns.html">
+                              Loyalty </a> </div>
+                          
+                        </div>
+                        <ul class="">
+                          
+                            <li>
+                               <a id="header4menu0link0" href="/in/en/flying-returns/about.html">About Flying Returns </a>
+                              
+                              
+                            </li>
+                          
+                            <li>
+                              
+                               <a class="enrollnowlink" id="header4menu0link1" href="#" target="_blank">Sign Up</a> 
+                            </li>
+                          
+                            <li>
+                              
+                               <a id="header4menu0link2" href="https://loyalty.airindia.com/in/en/account-summary.html" target="_blank">Sign In</a> 
+                            </li>
+                          
+                            <li>
+                               <a id="header4menu0link3" href="/in/en/flying-returns/points-calculator.html">Points Calculator </a>
+                              
+                              
+                            </li>
+                          
+                            <li>
+                               <a id="header4menu0link4" href="/in/en/flying-returns/earn-points.html">Earn Points </a>
+                              
+                              
+                            </li>
+                          
+                        </ul>
+                      </div>
+                    
+                      <div class="mega-item ">
+                        <div class="mega-col-title">
+                          
+                          <div class="hide-for-mobile">
+                            <p>&nbsp</p>
+                          </div>
+                        </div>
+                        <ul class="">
+                          
+                            <li>
+                               <a id="header4menu1link0" href="/in/en/flying-returns/spend-points.html">Spend Points </a>
+                              
+                              
+                            </li>
+                          
+                            <li>
+                               <a id="header4menu1link1" href="/in/en/flying-returns/faqs.html">Flying Returns FAQ </a>
+                              
+                              
+                            </li>
+                          
+                            <li>
+                               <a id="header4menu1link2" href="/in/en/flying-returns/important-updates.html">Important Updates </a>
+                              
+                              
+                            </li>
+                          
+                            <li>
+                               <a id="header4menu1link3" href="/in/en/flying-returns/partner-offers.html">Partner Offers </a>
+                              
+                              
+                            </li>
+                          
+                        </ul>
+                      </div>
+                    
+                    
+                      <div class="mega-item">
+                         <a id="header4Imagelink0" href="/in/en/flying-returns/about.html"> <img class="img-fit lazyload" data-src="/adobe/dynamicmedia/deliver/dm-aid--cb85ab10-ccf6-4387-bbe2-a6feeb590f29/enrol-loyalty.webp" alt="enrol-loyalty" title="enrol-loyalty"/> </a> 
+                        
+                      </div>
+                    
+                      <div class="mega-item">
+                         <a id="header4Imagelink1" href="/in/en/flying-returns/points-calculator.html"> <img class="img-fit lazyload" data-src="/adobe/dynamicmedia/deliver/dm-aid--30c7e898-8658-431a-8a15-d5f1fc6adb75/points-calculator.webp" alt="points-calculator" title="points-calculator"/> </a> 
+                        
+                      </div>
+                    
+                  </div>
+                </ul>
+              </li>
+            
+              <li class="menu-with-submenu"> <a id="headernav5" href="#" onclick="return false" class="aic">Support<i class="fas fa-angle-down"></i></a>
+                <ul class="sub-menu mega-menu mega-menu-column-4">
+                  <div class="container-bs">
+                    
+                      <div class="mega-item ">
+                        <div class="mega-col-title">
+                          <div> <a tabindex="0" id="headernav5menu0" href="/in/en.html">
+                              Support </a> </div>
+                          
+                        </div>
+                        <ul class="">
+                          
+                            <li>
+                               <a id="header5menu0link0" href="/in/en/customer-support.html">Customer Support </a>
+                              
+                              
+                            </li>
+                          
+                            <li>
+                               <a id="header5menu0link1" href="/in/en/frequently-asked-questions.html">FAQ </a>
+                              
+                              
+                            </li>
+                          
+                        </ul>
+                      </div>
+                    
+                    
+                  </div>
+                </ul>
+              </li>
+            
+          </ul>
+        </div>
+      </div>
+      <div class="header-item item-right">
+        
+          
+        
+          
+        
+          
+            <div id="signIn-mob"> 
+              <a href="https://loyalty.airindia.com" class="" target="_blank">
+                <img width="18" height="18" src="/content/dam/air-india/header/login.svg" alt="loginLightAlt" title="loginLightAlt" class="light"/> <img width="18" height="18" src="/content/dam/air-india/header/login_dark.svg" alt="loginDarkAlt" title="loginDarkAlt" class="dark"/> </a> </div>
+            <div id="signOut-mob" class="subloginDropdown d-none"> <a class=""> <img src="/content/dam/air-india/header/login_dark.svg" alt="loginDarkAlt" class="dark"/> </a>
+              <div class="loginDrop" style="display: none;">
+                <h3 class="userWelcome"></h3>
+                <p class="userCardDetails"></p>
+                <p><b class="userPoints"></b></p>
+                <div class="logindropbtn">
+                  <button type="button" class="myAccbtn" onclick="redirectToAccount()">My account</button>
+                  <button type="button" class="changePwdbtn" onclick="changePassword()">Change Password</button>
+                  <button type="button" class="logoutbtn" onclick="signOut()">Log out</button>
+                </div>
+              </div>
+            </div>
+          
+         <a class="menu-only-mobile" id="show-country" style="text-transform: uppercase;"></a> <button class="menu burger-icon" onclick="this.classList.toggle('opened');this.setAttribute('aria-expanded', this.classList.contains('opened'))" aria-label="Main Menu"> <svg width="100" height="100" viewBox="0 0 100 100">
+            <path class="line line1" d="M 20,29.000046 H 80.000231 C 80.000231,29.000046 94.498839,28.817352 94.532987,66.711331 94.543142,77.980673 90.966081,81.670246 85.259173,81.668997 79.552261,81.667751 75.000211,74.999942 75.000211,74.999942 L 25.000021,25.000058"/>
+            <path class="line line2" d="M 20,50 H 80"/>
+            <path class="line line3" d="M 20,70.999954 H 80.000231 C 80.000231,70.999954 94.498839,71.182648 94.532987,33.288669 94.543142,22.019327 90.966081,18.329754 85.259173,18.331003 79.552261,18.332249 75.000211,25.000058 75.000211,25.000058 L 25.000021,74.999942"/>
+          </svg> </button>
+      </div>
+    </div>
+  </section>
+
+<div class="modal modal-xl fade search-modal" id="searchModal" tabindex="-1" aria-labelledby="searchModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-body">
+        <div class="container-bs">
+          <div class="close-wrap"> <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button> </div>
+          <div class="search-content">
+            <h2>What are you looking for?</h2> <input type="text" aria-label="Search" name="search" id="search" class="" placeholder="Search for flights, do web check-in, check flight status, etc. "/> <input type="hidden" aria-label="HiddenSearch" name="hiddensearch" id="hiddensearch" class="" placeholder="" value="/content/air-india/in/en/search-results"/> <a class="search-icon"> <svg width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M20.5801 19.29L16.8375 15.61C18.2903 13.8144 18.9938 11.5353 18.8035 9.24133C18.6131 6.94733 17.5433 4.81281 15.8141 3.27667C14.0849 1.74053 11.8277 0.919537 9.50656 0.982497C7.18545 1.04546 4.97689 1.98759 3.335 3.61517C1.69311 5.24275 0.742696 7.43207 0.679182 9.73295C0.615668 12.0338 1.44388 14.2714 2.99352 15.9855C4.54317 17.6997 6.69645 18.7601 9.01062 18.9488C11.3248 19.1375 13.6239 18.4401 15.4353 17L19.1477 20.68C19.2414 20.7738 19.353 20.8482 19.4759 20.8989C19.5989 20.9497 19.7307 20.9758 19.8639 20.9758C19.9971 20.9758 20.1289 20.9497 20.2519 20.8989C20.3748 20.8482 20.4864 20.7738 20.5801 20.68C20.762 20.4936 20.8636 20.2444 20.8636 19.985C20.8636 19.7257 20.762 19.4765 20.5801 19.29ZM9.77599 17C8.37935 17 7.01407 16.5895 5.85281 15.8203C4.69154 15.0511 3.78645 13.9579 3.25198 12.6788C2.7175 11.3997 2.57766 9.99226 2.85013 8.63439C3.1226 7.27653 3.79515 6.02925 4.78272 5.05028C5.7703 4.07131 7.02854 3.40463 8.39835 3.13453C9.76815 2.86443 11.188 3.00306 12.4783 3.53287C13.7686 4.06268 14.8715 4.95989 15.6474 6.11103C16.4234 7.26218 16.8375 8.61556 16.8375 10C16.8375 11.8565 16.0935 13.637 14.7692 14.9498C13.445 16.2625 11.6488 17 9.77599 17Z" fill="#D9000D">
+              </svg> </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div></div>
+
+        
+    </div>
+
+</div>
+
+    
+</div>
+
+    </div>
+
+    
+</div>
+
+    
+</header>
+<main class="container responsivegrid aem-GridColumn aem-GridColumn--default--12">
+
+    
+    <div id="content-page" class="cmp-container" aria-label="content-page" role="content-page" style="background-color:#f0f0f0;">
+        
+
+
+<div class="aem-Grid aem-Grid--12 aem-Grid--default--12 ">
+    
+    <div class="pageBanner aem-GridColumn aem-GridColumn--default--12">
+<div class="all_page_banner" id="id_banner">
+  <img src="/adobe/dynamicmedia/deliver/dm-aid--c4c5d7e1-171c-4945-955d-a3cf041e42b2/main-banner.webp" alt="about-us" class="custom_banner_img"/>
+</div>
+
+</div>
+<div class="title aem-GridColumn aem-GridColumn--default--12">
+<div data-cmp-data-layer="{&#34;title-e8d2514f13&#34;:{&#34;@type&#34;:&#34;air-india/components/title&#34;,&#34;repo:modifyDate&#34;:&#34;2023-02-21T16:05:25Z&#34;,&#34;dc:title&#34;:&#34;About Us&#34;}}" id="title-e8d2514f13" class="cmp-title">
+  <div class="container-bs">
+    <h1 class="cmp-title__text">About Us
+    </h1>
+  </div>
+</div>
+
+    
+</div>
+<div class="container responsivegrid aem-GridColumn aem-GridColumn--default--12">
+
+    
+    <div id="container-30de649b60" class="cmp-container" style="background-color:#fff;">
+        
+
+
+<div class="aem-Grid aem-Grid--12 aem-Grid--default--12 aem-Grid--phone--12 ">
+    
+    <div class="container responsivegrid aem-GridColumn aem-GridColumn--default--12">
+
+    
+    <div id="infoBanner" class="cmp-container" style="background-color:#EFF6FF;">
+        
+
+
+<div class="aem-Grid aem-Grid--12 aem-Grid--default--12 ">
+    
+    <div class="container responsivegrid container-bs aem-GridColumn aem-GridColumn--default--12">
+
+    
+    <div id="container-8f36380e97" class="cmp-container">
+        
+
+
+<div class="aem-Grid aem-Grid--12 aem-Grid--tablet--12 aem-Grid--default--12 aem-Grid--phone--12 ">
+    
+    <div class="container responsivegrid aem-GridColumn--tablet--12 aem-GridColumn--offset--tablet--0 aem-GridColumn--default--none aem-GridColumn--phone--none aem-GridColumn--phone--12 aem-GridColumn--tablet--none aem-GridColumn aem-GridColumn--offset--phone--0 aem-GridColumn--default--3 aem-GridColumn--offset--default--0">
+
+    
+    <div id="container-f48772be25" class="cmp-container">
+        
+
+
+<div class="aem-Grid aem-Grid--3 aem-Grid--tablet--12 aem-Grid--default--3 aem-Grid--phone--12 ">
+    
+    <div class="text aem-GridColumn--offset--tablet--0 aem-GridColumn--tablet--5 aem-GridColumn--phone--12 aem-GridColumn--tablet--none aem-GridColumn aem-GridColumn--default--3">
+<div data-cmp-data-layer="{&#34;text-60c0a493c7&#34;:{&#34;@type&#34;:&#34;air-india/components/text&#34;,&#34;repo:modifyDate&#34;:&#34;2023-08-02T05:18:55Z&#34;,&#34;xdm:text&#34;:&#34;&lt;h3 style=\&#34;text-align: center;\&#34;>12,000+&lt;/h3>\r\n&lt;p style=\&#34;text-align: center;\&#34;>Employees Worldwide&lt;/p>\r\n&#34;}}" id="text-60c0a493c7" class="cmp-text">
+    <h3 style="	text-align: center;
+">12,000&#43;</h3>
+<p style="	text-align: center;
+">Employees Worldwide</p>
+
+</div>
+
+    
+
+</div>
+
+    
+</div>
+
+    </div>
+
+    
+</div>
+<div class="container responsivegrid aem-GridColumn--tablet--12 aem-GridColumn--offset--tablet--0 aem-GridColumn--default--none aem-GridColumn--phone--none aem-GridColumn--phone--12 aem-GridColumn--tablet--none aem-GridColumn aem-GridColumn--offset--phone--0 aem-GridColumn--default--3 aem-GridColumn--offset--default--0">
+
+    
+    <div id="container-5525056e90" class="cmp-container">
+        
+
+
+<div class="aem-Grid aem-Grid--3 aem-Grid--tablet--12 aem-Grid--default--3 aem-Grid--phone--12 ">
+    
+    <div class="text aem-GridColumn--offset--tablet--0 aem-GridColumn--phone--12 aem-GridColumn--tablet--none aem-GridColumn aem-GridColumn--tablet--6 aem-GridColumn--default--3">
+<div data-cmp-data-layer="{&#34;text-9236e649fd&#34;:{&#34;@type&#34;:&#34;air-india/components/text&#34;,&#34;repo:modifyDate&#34;:&#34;2023-08-02T05:18:55Z&#34;,&#34;xdm:text&#34;:&#34;&lt;h3 style=\&#34;text-align: center;\&#34;>79&lt;/h3>\r\n&lt;p style=\&#34;text-align: center;\&#34;>Destinations&lt;/p>\r\n&#34;}}" id="text-9236e649fd" class="cmp-text">
+    <h3 style="	text-align: center;
+">79</h3>
+<p style="	text-align: center;
+">Destinations</p>
+
+</div>
+
+    
+
+</div>
+
+    
+</div>
+
+    </div>
+
+    
+</div>
+<div class="container responsivegrid aem-GridColumn--tablet--12 aem-GridColumn--offset--tablet--0 aem-GridColumn--default--none aem-GridColumn--phone--none aem-GridColumn--phone--12 aem-GridColumn--tablet--none aem-GridColumn aem-GridColumn--offset--phone--0 aem-GridColumn--default--3 aem-GridColumn--offset--default--0">
+
+    
+    <div id="container-b992f67ac2" class="cmp-container">
+        
+
+
+<div class="aem-Grid aem-Grid--3 aem-Grid--tablet--12 aem-Grid--default--3 aem-Grid--phone--12 ">
+    
+    <div class="text aem-GridColumn--offset--tablet--0 aem-GridColumn--phone--12 aem-GridColumn--tablet--none aem-GridColumn aem-GridColumn--tablet--6 aem-GridColumn--default--3">
+<div data-cmp-data-layer="{&#34;text-e5915616f7&#34;:{&#34;@type&#34;:&#34;air-india/components/text&#34;,&#34;repo:modifyDate&#34;:&#34;2023-08-02T05:18:55Z&#34;,&#34;xdm:text&#34;:&#34;&lt;h3 style=\&#34;text-align: center;\&#34;>59&lt;/h3>\r\n&lt;p style=\&#34;text-align: center;\&#34;>Nonstop International Routes&lt;/p>\r\n&#34;}}" id="text-e5915616f7" class="cmp-text">
+    <h3 style="	text-align: center;
+">59</h3>
+<p style="	text-align: center;
+">Nonstop International Routes</p>
+
+</div>
+
+    
+
+</div>
+
+    
+</div>
+
+    </div>
+
+    
+</div>
+<div class="container responsivegrid aem-GridColumn--tablet--12 aem-GridColumn--offset--tablet--0 aem-GridColumn--default--none aem-GridColumn--phone--none aem-GridColumn--phone--12 aem-GridColumn--tablet--none aem-GridColumn aem-GridColumn--offset--phone--0 aem-GridColumn--default--3 aem-GridColumn--offset--default--0">
+
+    
+    <div id="container-bf706f79dd" class="cmp-container">
+        
+
+
+<div class="aem-Grid aem-Grid--3 aem-Grid--tablet--12 aem-Grid--default--3 aem-Grid--phone--12 ">
+    
+    <div class="text aem-GridColumn--offset--tablet--0 aem-GridColumn--phone--12 aem-GridColumn--tablet--none aem-GridColumn aem-GridColumn--tablet--6 aem-GridColumn--default--3">
+<div data-cmp-data-layer="{&#34;text-626d8b1191&#34;:{&#34;@type&#34;:&#34;air-india/components/text&#34;,&#34;repo:modifyDate&#34;:&#34;2023-08-02T05:18:55Z&#34;,&#34;xdm:text&#34;:&#34;&lt;h3 style=\&#34;text-align: center;\&#34;>90&lt;/h3>\r\n&lt;p style=\&#34;text-align: center;\&#34;>Years Of Service&lt;/p>\r\n&#34;}}" id="text-626d8b1191" class="cmp-text">
+    <h3 style="	text-align: center;
+">90</h3>
+<p style="	text-align: center;
+">Years Of Service</p>
+
+</div>
+
+    
+
+</div>
+
+    
+</div>
+
+    </div>
+
+    
+</div>
+
+    
+</div>
+
+    </div>
+
+    
+</div>
+
+    
+</div>
+
+    </div>
+
+    
+</div>
+<div class="cardBanner aem-GridColumn aem-GridColumn--default--12">
+  
+  
+    <div class="cardBanner imgLeft">
+      <div class="card">
+        <img class="card-img-top main-img child" src="/adobe/dynamicmedia/deliver/dm-aid--f604b853-e6ad-401f-879d-7fcd14e46223/overlay.png" alt="about-air-india" title="about-air-india"/>
+        <img alt="about-air-india" class="main-img-mobile" src="/adobe/dynamicmedia/deliver/dm-aid--8bc0f21d-78e3-465c-8cc5-cf1f35dc0498/jrdtata-banner.webp" srcset=""/>
+        <div class="card-img-overlay">
+          <div class="container-bs">
+            <div class="row">
+              <div class="col-md-6">
+                
+                <div>
+                  <h2 class="card-title">tata history</h2>
+                </div>
+                <div class="content-text">
+                  <h2>More Than <b>90 Years </b>of Innovation</h2>
+<p>Our founder, JRD Tata, was also our first pilot. His passion for aviation led to many firsts for the company.</p>
+
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  
+  
+  
+
+  
+
+  
+
+<div id="myBtnModal" class="modal-ppup">
+
+  <!-- Modal content -->
+  <div class="modal-content-ppup">
+    <span class="close">&times;</span>
+    <p id="mdl-btn-text"> </p>
+    <div class="btn-mdl-contn">
+      <a id="okBtn"></a>
+      <a id="noBtn"></a>
+    </div>
+  </div>
+
+</div>
+<script>
+
+  var modal = document.getElementById("myBtnModal");
+
+  // Get the button that opens the modal
+  var btn = document.getElementById("myBtn");
+  // Get the <span> element that closes the modal
+  var span = document.getElementsByClassName("close")[0];
+
+  var cls = document.getElementById("noBtn")
+
+  // When the user clicks the button, open the modal 
+  if (btn) {
+    btn.onclick = function () {
+      modal.style.display = "block";
+    }
+  }
+  // When the user clicks on <span> (x), close the modal
+  span.onclick = function () {
+    modal.style.display = "none";
+  }
+  cls.onclick = function () {
+    modal.style.display = "none";
+  }
+  // When the user clicks anywhere outside of the modal, close it
+  window.onclick = function (event) {
+    if (event.target == modal) {
+      modal.style.display = "none";
+    }
+  }
+</script>
+
+<style>
+  /* #myBtnModal {
+        width: 700px;
+        padding: 40px 32px;
+
+    } */
+  @media (max-width:991px) {
+    .btn-mdl {
+      display: flex;
+      flex-direction: column !important;
+      width: 100%;
+      align-items: flex-start !important;
+      margin-top: 10px;
+    }
+
+    .btn-mdl p {
+      text-align: initial !important;
+      margin-bottom: 5px !important;
+    }
+  }
+
+  .btn-mdl {
+    display: flex;
+    padding: 12px;
+    justify-content: space-between;
+    align-items: center;
+    align-self: stretch;
+    background: #F0F5F7;
+  }
+
+  .btn-mdl p {
+    color: #1F2B34;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px;
+  }
+
+  button#myBtn {
+    width: 148px;
+    height: 48px;
+    display: flex;
+    padding: 16px;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #C02D32;
+    background: #C02D32;
+    color: white;
+    font-size: 14px;
+    font-weight: 600;
+  }
+
+  #corporate-booking-landing #content-page #corporate_booking .white-section #howItWorks p#mdl-btn-text {
+    text-align: center;
+    font-size: 20px !important;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px;
+    margin-bottom: 32px;
+  }
+
+  #mdl-btn-text {
+    text-align: center;
+    font-size: 20px !important;
+    font-style: normal !important;
+    font-weight: 500 !important;
+    line-height: 24px !important;
+  }
+
+  #okBtn {
+    display: flex;
+    width: 151px;
+    height: 48px;
+    padding: 16px;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid #C02D32;
+    background-color: #C02D32;
+    margin-right: 12px;
+    color: #fff !important;
+    text-decoration: none;
+  }
+
+  #noBtn {
+    display: flex;
+    width: 151px;
+    height: 48px;
+    padding: 8px 16px;
+    cursor: pointer;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid black;
+    color: black !important;
+    text-decoration: none !important;
+  }
+
+  .btn-mdl-contn {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .btn-mdl {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+  }
+
+  .modal-ppup {
+    display: none;
+    /* Hidden by default */
+    position: fixed;
+    /* Stay in place */
+    z-index: 9999;
+    /* Sit on top */
+    padding-top: 100px;
+    /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%;
+    /* Full width */
+    height: 100%;
+    /* Full height */
+    overflow: auto;
+    /* Enable scroll if needed */
+    background-color: rgb(0, 0, 0);
+    /* Fallback color */
+    background-color: rgba(0, 0, 0, 0.4);
+    /* Black w/ opacity */
+  }
+
+  /* Modal Content */
+  .modal-content-ppup {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 100%;
+    max-width: 700px;
+  }
+
+  /* The Close Button */
+  .close {
+    color: #aaaaaa;
+    /* float: left; */
+    font-size: 28px;
+    font-weight: bold;
+    display: flex;
+    flex-direction: row-reverse;
+  }
+
+  .close:hover,
+  .close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+  }
+</style></div>
+<div class="container responsivegrid container-bs aem-GridColumn aem-GridColumn--default--12">
+
+    
+    <div id="timeline" class="cmp-container">
+        
+
+
+<div class="aem-Grid aem-Grid--12 aem-Grid--default--12 ">
+    
+    <div class="text aem-GridColumn--default--none aem-GridColumn aem-GridColumn--default--12 aem-GridColumn--offset--default--0">
+<div data-cmp-data-layer="{&#34;text-20ef956774&#34;:{&#34;@type&#34;:&#34;air-india/components/text&#34;,&#34;repo:modifyDate&#34;:&#34;2023-08-02T05:18:55Z&#34;,&#34;xdm:text&#34;:&#34;&lt;h3 style=\&#34;text-align: center;\&#34;>1932&lt;/h3>\r\n&lt;p style=\&#34;text-align: center;\&#34;>India’s first commercial airline launched by JRD Tata&lt;/p>\r\n&#34;}}" id="text-20ef956774" class="cmp-text">
+    <h3 style="	text-align: center;
+">1932</h3>
+<p style="	text-align: center;
+">India’s first commercial airline launched by JRD Tata</p>
+
+</div>
+
+    
+
+</div>
+<div class="text aem-GridColumn--default--none aem-GridColumn aem-GridColumn--default--12 aem-GridColumn--offset--default--0">
+<div data-cmp-data-layer="{&#34;text-711e485b3a&#34;:{&#34;@type&#34;:&#34;air-india/components/text&#34;,&#34;repo:modifyDate&#34;:&#34;2023-08-02T05:18:55Z&#34;,&#34;xdm:text&#34;:&#34;&lt;h3 style=\&#34;text-align: center;\&#34;>1962&lt;/h3>\r\n&lt;p style=\&#34;text-align: center;\&#34;>World’s first airline with a full jet-engine fleet&lt;/p>\r\n&#34;}}" id="text-711e485b3a" class="cmp-text">
+    <h3 style="	text-align: center;
+">1962</h3>
+<p style="	text-align: center;
+">World’s first airline with a full jet-engine fleet</p>
+
+</div>
+
+    
+
+</div>
+<div class="text aem-GridColumn--default--none aem-GridColumn aem-GridColumn--default--12 aem-GridColumn--offset--default--0">
+<div data-cmp-data-layer="{&#34;text-4e8d41f6e5&#34;:{&#34;@type&#34;:&#34;air-india/components/text&#34;,&#34;repo:modifyDate&#34;:&#34;2023-08-02T05:18:55Z&#34;,&#34;xdm:text&#34;:&#34;&lt;h3 style=\&#34;text-align: center;\&#34;>1971&lt;/h3>\r\n&lt;p style=\&#34;text-align: center;\&#34;>Introduced luxury travel with “The Palace in the Sky” on a Boeing 747&lt;/p>\r\n&#34;}}" id="text-4e8d41f6e5" class="cmp-text">
+    <h3 style="	text-align: center;
+">1971</h3>
+<p style="	text-align: center;
+">Introduced luxury travel with “The Palace in the Sky” on a Boeing 747</p>
+
+</div>
+
+    
+
+</div>
+<div class="text aem-GridColumn--default--none aem-GridColumn aem-GridColumn--default--12 aem-GridColumn--offset--default--0">
+<div data-cmp-data-layer="{&#34;text-2b7bb40d50&#34;:{&#34;@type&#34;:&#34;air-india/components/text&#34;,&#34;repo:modifyDate&#34;:&#34;2023-08-02T05:18:55Z&#34;,&#34;xdm:text&#34;:&#34;&lt;h3 style=\&#34;text-align: center;\&#34;>1993&lt;/h3>\r\n&lt;p style=\&#34;text-align: center;\&#34;>First nonstop flight connecting New York and Delhi&lt;/p>\r\n&#34;}}" id="text-2b7bb40d50" class="cmp-text">
+    <h3 style="	text-align: center;
+">1993</h3>
+<p style="	text-align: center;
+">First nonstop flight connecting New York and Delhi</p>
+
+</div>
+
+    
+
+</div>
+<div class="text aem-GridColumn--default--none aem-GridColumn aem-GridColumn--default--12 aem-GridColumn--offset--default--0">
+<div data-cmp-data-layer="{&#34;text-0bf14e8bc3&#34;:{&#34;@type&#34;:&#34;air-india/components/text&#34;,&#34;repo:modifyDate&#34;:&#34;2023-08-02T05:18:55Z&#34;,&#34;xdm:text&#34;:&#34;&lt;h3 style=\&#34;text-align: center;\&#34;>2017&lt;/h3>\r\n&lt;p style=\&#34;text-align: center;\&#34;>First around-the-world flight with an all-women crew&lt;/p>\r\n&#34;}}" id="text-0bf14e8bc3" class="cmp-text">
+    <h3 style="	text-align: center;
+">2017</h3>
+<p style="	text-align: center;
+">First around-the-world flight with an all-women crew</p>
+
+</div>
+
+    
+
+</div>
+
+    
+</div>
+
+    </div>
+
+    
+</div>
+<div class="container responsivegrid container-bs aem-GridColumn aem-GridColumn--default--12">
+
+    
+    <div id="introAbout" class="cmp-container">
+        
+
+
+<div class="aem-Grid aem-Grid--12 aem-Grid--default--12 ">
+    
+    <div class="text aem-GridColumn aem-GridColumn--default--12">
+<div data-cmp-data-layer="{&#34;text-2a5e4be767&#34;:{&#34;@type&#34;:&#34;air-india/components/text&#34;,&#34;repo:modifyDate&#34;:&#34;2023-08-02T05:18:55Z&#34;,&#34;xdm:text&#34;:&#34;&lt;p>Today, we are proud to be the flag carrier of India, with the largest international network and most &lt;a id=\&#34;about-us-1\&#34; title=\&#34;Non Stop Routes\&#34; href=\&#34;/content/air-india/in/en/destinations/newlaunch.html\&#34; target=\&#34;_self\&#34; rel=\&#34;noopener noreferrer\&#34;>&lt;b>nonstop routes&lt;/b>&lt;/a> connecting India with global destinations.&lt;/p>\r\n&#34;}}" id="text-2a5e4be767" class="cmp-text">
+    <p>Today, we are proud to be the flag carrier of India, with the largest international network and most <a id="about-us-1" title="Non Stop Routes" href="/in/en/destinations/newlaunch.html" target="_self" rel="noopener noreferrer"><b>nonstop routes</b></a> connecting India with global destinations.</p>
+
+</div>
+
+    
+
+</div>
+
+    
+</div>
+
+    </div>
+
+    
+</div>
+<div class="container responsivegrid container-bs aem-GridColumn aem-GridColumn--default--12">
+
+    
+    <div id="tatagroup" class="cmp-container">
+        
+
+
+<div class="aem-Grid aem-Grid--12 aem-Grid--default--12 aem-Grid--phone--12 ">
+    
+    <div class="container responsivegrid aem-GridColumn--default--none aem-GridColumn--phone--none aem-GridColumn--phone--12 aem-GridColumn aem-GridColumn--default--6 aem-GridColumn--offset--phone--0 aem-GridColumn--offset--default--0">
+
+    
+    <div id="container-f02087eb89" class="cmp-container">
+        
+
+
+<div class="aem-Grid aem-Grid--6 aem-Grid--default--6 aem-Grid--phone--12 ">
+    
+    <div class="CustomImage aem-GridColumn--default--none aem-GridColumn--phone--none aem-GridColumn--phone--6 aem-GridColumn aem-GridColumn--offset--phone--0 aem-GridColumn--default--3 aem-GridColumn--offset--default--0">
+  <div class="image custom-img-comp-wrapper">
+    
+    
+      <img class="custom_image_component cmp-image__image lazyload" data-src="/adobe/dynamicmedia/deliver/dm-aid--3d2cc234-5fd4-4b31-b427-9706ad12ef1f/ratan-tata.webp" alt="Ratan Tata" title="Ratan Tata"/>
+    
+  </div>
+</div>
+<div class="CustomImage aem-GridColumn--default--none aem-GridColumn--phone--none aem-GridColumn--phone--6 aem-GridColumn aem-GridColumn--offset--phone--0 aem-GridColumn--default--3 aem-GridColumn--offset--default--0">
+  <div class="image custom-img-comp-wrapper">
+    
+    
+      <img class="custom_image_component cmp-image__image lazyload" data-src="/adobe/dynamicmedia/deliver/dm-aid--9ca9cb6a-6099-443a-821b-0ab852db6b36/jamseetji.webp" alt="Jamshedji Tata" title="Jamshedji Tata"/>
+    
+  </div>
+</div>
+
+    
+</div>
+
+    </div>
+
+    
+</div>
+<div class="container responsivegrid aem-GridColumn--default--none aem-GridColumn--phone--none aem-GridColumn--phone--12 aem-GridColumn aem-GridColumn--default--6 aem-GridColumn--offset--phone--0 aem-GridColumn--offset--default--0">
+
+    
+    
+    
+    <div id="container-ce93d7ce5c" class="cmp-container">
+        
+        <div class="text">
+<div data-cmp-data-layer="{&#34;text-327be05c95&#34;:{&#34;@type&#34;:&#34;air-india/components/text&#34;,&#34;repo:modifyDate&#34;:&#34;2023-08-02T05:18:55Z&#34;,&#34;xdm:text&#34;:&#34;&lt;h3>Tata Group to Oversee Expansion&lt;/h3>\r\n&lt;p>India’s largest conglomerate, The Tata Group, reacquired Air India in January 2022. Tata Group companies employ over 700,000 people globally and operates in more than 100 countries. Iconic brands in The Tata Group include Tata Motors, Tata Steel, Tata Consultancy Services (TCS), and Tata Power. Tata Group chairman Natarajan Chandrasekaran promises, “We will strive to build a world-class airline that makes every Indian proud.”&lt;/p>\r\n&lt;p>With the support of The Tata Group, we are on a mission to blend advanced technology with vintage hospitality, spreading our wings to take you more places.&lt;br>\r\n&lt;/p>\r\n&#34;}}" id="text-327be05c95" class="cmp-text">
+    <h3>Tata Group to Oversee Expansion</h3>
+<p>India’s largest conglomerate, The Tata Group, reacquired Air India in January 2022. Tata Group companies employ over 700,000 people globally and operates in more than 100 countries. Iconic brands in The Tata Group include Tata Motors, Tata Steel, Tata Consultancy Services (TCS), and Tata Power. Tata Group chairman Natarajan Chandrasekaran promises, “We will strive to build a world-class airline that makes every Indian proud.”</p>
+<p>With the support of The Tata Group, we are on a mission to blend advanced technology with vintage hospitality, spreading our wings to take you more places.<br />
+</p>
+
+</div>
+
+    
+
+</div>
+
+        
+    </div>
+
+</div>
+
+    
+</div>
+
+    </div>
+
+    
+</div>
+<div class="cardBanner aem-GridColumn aem-GridColumn--default--12">
+  
+  
+  
+    <div class="imgCenter">
+      <div class="card">
+        <img class="card-img-top main-img child" src="/adobe/dynamicmedia/deliver/dm-aid--4abbbdd1-9a20-4a95-81da-5feda1a5ba20/fly-banner.webp" alt="about-air-india-zero-emission" title="about-air-india-zero-emission"/>
+        <img class="main-img-mobile" src="/adobe/dynamicmedia/deliver/dm-aid--4abbbdd1-9a20-4a95-81da-5feda1a5ba20/fly-banner.webp" srcset="" alt="about-air-india-zero-emission"/>
+        <div class="card-img-overlay">
+          <div class="container-bs">
+            <div class="row">
+              <div class="col">
+                <div class="content-text">
+                  <h2>We Pledge to <i>Fly Net Zero</i></h2>
+<p>Air India is committed to the International Air Transport Association’s Fly Net Zero initiative to operate with net-zero carbon emissions by 2050.</p>
+
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  
+  
+
+  
+
+  
+
+<div id="myBtnModal" class="modal-ppup">
+
+  <!-- Modal content -->
+  <div class="modal-content-ppup">
+    <span class="close">&times;</span>
+    <p id="mdl-btn-text"> </p>
+    <div class="btn-mdl-contn">
+      <a id="okBtn"></a>
+      <a id="noBtn"></a>
+    </div>
+  </div>
+
+</div>
+<script>
+
+  var modal = document.getElementById("myBtnModal");
+
+  // Get the button that opens the modal
+  var btn = document.getElementById("myBtn");
+  // Get the <span> element that closes the modal
+  var span = document.getElementsByClassName("close")[0];
+
+  var cls = document.getElementById("noBtn")
+
+  // When the user clicks the button, open the modal 
+  if (btn) {
+    btn.onclick = function () {
+      modal.style.display = "block";
+    }
+  }
+  // When the user clicks on <span> (x), close the modal
+  span.onclick = function () {
+    modal.style.display = "none";
+  }
+  cls.onclick = function () {
+    modal.style.display = "none";
+  }
+  // When the user clicks anywhere outside of the modal, close it
+  window.onclick = function (event) {
+    if (event.target == modal) {
+      modal.style.display = "none";
+    }
+  }
+</script>
+
+<style>
+  /* #myBtnModal {
+        width: 700px;
+        padding: 40px 32px;
+
+    } */
+  @media (max-width:991px) {
+    .btn-mdl {
+      display: flex;
+      flex-direction: column !important;
+      width: 100%;
+      align-items: flex-start !important;
+      margin-top: 10px;
+    }
+
+    .btn-mdl p {
+      text-align: initial !important;
+      margin-bottom: 5px !important;
+    }
+  }
+
+  .btn-mdl {
+    display: flex;
+    padding: 12px;
+    justify-content: space-between;
+    align-items: center;
+    align-self: stretch;
+    background: #F0F5F7;
+  }
+
+  .btn-mdl p {
+    color: #1F2B34;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px;
+  }
+
+  button#myBtn {
+    width: 148px;
+    height: 48px;
+    display: flex;
+    padding: 16px;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #C02D32;
+    background: #C02D32;
+    color: white;
+    font-size: 14px;
+    font-weight: 600;
+  }
+
+  #corporate-booking-landing #content-page #corporate_booking .white-section #howItWorks p#mdl-btn-text {
+    text-align: center;
+    font-size: 20px !important;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px;
+    margin-bottom: 32px;
+  }
+
+  #mdl-btn-text {
+    text-align: center;
+    font-size: 20px !important;
+    font-style: normal !important;
+    font-weight: 500 !important;
+    line-height: 24px !important;
+  }
+
+  #okBtn {
+    display: flex;
+    width: 151px;
+    height: 48px;
+    padding: 16px;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid #C02D32;
+    background-color: #C02D32;
+    margin-right: 12px;
+    color: #fff !important;
+    text-decoration: none;
+  }
+
+  #noBtn {
+    display: flex;
+    width: 151px;
+    height: 48px;
+    padding: 8px 16px;
+    cursor: pointer;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid black;
+    color: black !important;
+    text-decoration: none !important;
+  }
+
+  .btn-mdl-contn {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .btn-mdl {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+  }
+
+  .modal-ppup {
+    display: none;
+    /* Hidden by default */
+    position: fixed;
+    /* Stay in place */
+    z-index: 9999;
+    /* Sit on top */
+    padding-top: 100px;
+    /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%;
+    /* Full width */
+    height: 100%;
+    /* Full height */
+    overflow: auto;
+    /* Enable scroll if needed */
+    background-color: rgb(0, 0, 0);
+    /* Fallback color */
+    background-color: rgba(0, 0, 0, 0.4);
+    /* Black w/ opacity */
+  }
+
+  /* Modal Content */
+  .modal-content-ppup {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 100%;
+    max-width: 700px;
+  }
+
+  /* The Close Button */
+  .close {
+    color: #aaaaaa;
+    /* float: left; */
+    font-size: 28px;
+    font-weight: bold;
+    display: flex;
+    flex-direction: row-reverse;
+  }
+
+  .close:hover,
+  .close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+  }
+</style></div>
+<div class="container responsivegrid container-bs mx-fix aem-GridColumn aem-GridColumn--default--12">
+
+    
+    <div id="airindiaBrand" class="cmp-container">
+        
+
+
+<div class="aem-Grid aem-Grid--12 aem-Grid--default--12 aem-Grid--phone--12 ">
+    
+    <div class="container responsivegrid aem-GridColumn--default--none aem-GridColumn--phone--none aem-GridColumn--phone--12 aem-GridColumn aem-GridColumn--default--6 aem-GridColumn--offset--phone--0 aem-GridColumn--offset--default--0">
+
+    
+    <div id="container-4503f1111a" class="cmp-container">
+        
+
+
+<div class="aem-Grid aem-Grid--6 aem-Grid--default--6 aem-Grid--phone--12 ">
+    
+    <div class="text aem-GridColumn--phone--12 aem-GridColumn aem-GridColumn--default--6">
+<div data-cmp-data-layer="{&#34;text-6dec62fca3&#34;:{&#34;@type&#34;:&#34;air-india/components/text&#34;,&#34;repo:modifyDate&#34;:&#34;2023-08-02T05:18:55Z&#34;,&#34;xdm:text&#34;:&#34;&lt;p>&lt;b>The Air India Brand&lt;/b>&lt;/p>\r\n&#34;}}" id="text-6dec62fca3" class="cmp-text">
+    <p><b>The Air India Brand</b></p>
+
+</div>
+
+    
+
+</div>
+<div class="image aem-GridColumn--default--none aem-GridColumn--phone--none aem-GridColumn aem-GridColumn--phone--3 aem-GridColumn--default--6 aem-GridColumn--offset--phone--0 aem-GridColumn--offset--default--0">
+
+  <div data-cmp-src="/adobe/dynamicmedia/deliver/dm-aid--8fb714f0-ad31-42f9-b929-66561798c5a5/AIabout1.png" data-cmp-hook-image="imageV3" class="cmp-image" itemscope itemtype="http://schema.org/ImageObject">
+ 
+     <img src="/adobe/dynamicmedia/deliver/dm-aid--8fb714f0-ad31-42f9-b929-66561798c5a5/AIabout1.png" class="cmp-image__image" itemprop="contentUrl" alt="Air India Logo"/>
+ 
+ 
+ 
+</div>
+
+    
+</div>
+<div class="text aem-GridColumn--phone--12 aem-GridColumn aem-GridColumn--default--6">
+<div data-cmp-data-layer="{&#34;text-bb2a5da933&#34;:{&#34;@type&#34;:&#34;air-india/components/text&#34;,&#34;repo:modifyDate&#34;:&#34;2023-08-02T05:18:55Z&#34;,&#34;xdm:text&#34;:&#34;&lt;h3>Our logo&lt;/h3>\r\n&lt;p>Our logo features a red swan, symbolising flight. The orange spokes inside the swan are inspired by the Ashoka Chakra, the wheel of righteous duty, which also features in the Indian flag and underscores our deep-rooted connection to India’s cultural heritage.&lt;/p>\r\n&#34;}}" id="text-bb2a5da933" class="cmp-text">
+    <h3>Our logo</h3>
+<p>Our logo features a red swan, symbolising flight. The orange spokes inside the swan are inspired by the Ashoka Chakra, the wheel of righteous duty, which also features in the Indian flag and underscores our deep-rooted connection to India’s cultural heritage.</p>
+
+</div>
+
+    
+
+</div>
+
+    
+</div>
+
+    </div>
+
+    
+</div>
+<div class="container responsivegrid aem-GridColumn--default--none aem-GridColumn--phone--none aem-GridColumn--phone--11 aem-GridColumn aem-GridColumn--default--6 aem-GridColumn--offset--phone--0 aem-GridColumn--offset--default--0">
+
+    
+    <div id="maharaja-section" class="cmp-container">
+        
+
+
+<div class="aem-Grid aem-Grid--6 aem-Grid--default--6 aem-Grid--phone--11 ">
+    
+    <div class="CustomImage aem-GridColumn--default--none aem-GridColumn--phone--none aem-GridColumn aem-GridColumn--offset--phone--0 aem-GridColumn--offset--default--0 aem-GridColumn--default--2 aem-GridColumn--phone--1">
+  <div class="image custom-img-comp-wrapper">
+    
+    
+      <img class="custom_image_component cmp-image__image lazyload" data-src="/adobe/dynamicmedia/deliver/dm-aid--77eac36b-08e0-4e99-a511-1a9b10dc6c9c/maharaja.webp" alt="Maharaja" title="Maharaja"/>
+    
+  </div>
+</div>
+<div class="text aem-GridColumn--default--none aem-GridColumn--phone--none aem-GridColumn--phone--11 aem-GridColumn aem-GridColumn--offset--phone--0 aem-GridColumn--offset--default--0 aem-GridColumn--default--4">
+<div data-cmp-data-layer="{&#34;maharaja&#34;:{&#34;@type&#34;:&#34;air-india/components/text&#34;,&#34;repo:modifyDate&#34;:&#34;2023-08-02T05:18:55Z&#34;,&#34;xdm:text&#34;:&#34;&lt;h3>The Maharaja&lt;/h3>\r\n&lt;p>&lt;b>The Maharaja, our warm and witty mascot, has greeted every passenger since 1946.&lt;/b>&lt;/p>\r\n&lt;p>With his outsized moustache and distinctive personality, Maharaja is recognized by millions of travellers as someone eager to accompany you to all corners of the world.&lt;/p>\r\n&#34;}}" id="maharaja" class="cmp-text">
+    <h3>The Maharaja</h3>
+<p><b>The Maharaja, our warm and witty mascot, has greeted every passenger since 1946.</b></p>
+<p>With his outsized moustache and distinctive personality, Maharaja is recognized by millions of travellers as someone eager to accompany you to all corners of the world.</p>
+
+</div>
+
+    
+
+</div>
+<div class="container responsivegrid aem-GridColumn--default--none aem-GridColumn--phone--none aem-GridColumn--phone--11 aem-GridColumn aem-GridColumn--offset--phone--0 aem-GridColumn--offset--default--0 aem-GridColumn--default--4">
+
+    
+    <div id="container-19409e7750" class="cmp-container">
+        
+
+
+<div class="aem-Grid aem-Grid--4 aem-Grid--tablet--4 aem-Grid--default--4 aem-Grid--phone--11 ">
+    
+    <div class="text aem-GridColumn--offset--tablet--0 aem-GridColumn--phone--none aem-GridColumn--default--hide aem-GridColumn--tablet--4 aem-GridColumn--phone--11 aem-GridColumn--tablet--none aem-GridColumn aem-GridColumn--offset--phone--0 aem-GridColumn--offset--default--0 aem-GridColumn--default--4">
+<div data-cmp-data-layer="{&#34;text-024e312b7e&#34;:{&#34;@type&#34;:&#34;air-india/components/text&#34;,&#34;repo:modifyDate&#34;:&#34;2023-08-02T05:18:55Z&#34;,&#34;xdm:text&#34;:&#34;&lt;p>With his outsized moustache and distinctive personality, Maharajah is recognized by millions of travellers as someone eager to accompany you to all corners of the world.&lt;br />\r\n&lt;/p>\r\n&#34;}}" id="text-024e312b7e" class="cmp-text">
+    <p>With his outsized moustache and distinctive personality, Maharajah is recognized by millions of travellers as someone eager to accompany you to all corners of the world.<br />
+</p>
+
+</div>
+
+    
+
+</div>
+
+    
+</div>
+
+    </div>
+
+    
+</div>
+
+    
+</div>
+
+    </div>
+
+    
+</div>
+
+    
+</div>
+
+    </div>
+
+    
+</div>
+<div class="container responsivegrid container-bs mx-fix aem-GridColumn--phone--hide aem-GridColumn--phone--12 aem-GridColumn aem-GridColumn--default--12 aem-GridColumn--offset--phone--0">
+
+    
+    <div id="container-dd4d785f6e" class="cmp-container">
+        
+
+
+<div class="aem-Grid aem-Grid--12 aem-Grid--default--12 ">
+    
+    <div class="cardImage text aem-GridColumn aem-GridColumn--default--12">
+  
+    
+    
+
+
+
+  
+
+  <!-- Card Carousel -->
+  
+  <!-- Grid Card -->
+  
+  <!-- STacked Card -->
+  
+  
+    <div class="container-bs management-grid">
+      <div class="section-img">
+        
+          <img src="/content/dam/air-india/image/leaders/boards-leadership.svg" alt="Management Leadership " title="Management Leadership " class="d-block d-md-none mb-4"/>
+          <img src="/content/dam/air-india/image/leaders/boards-leadership.svg" alt="Management Leadership " title="Management Leadership " class="d-none d-md-block mxW940"/>
+        
+        <h4>Board of Directors</h4>
+        <div class="leaders-container">
+          
+            <div class="leader-item">
+              <a href="#" data-bs-title="N Chandrasekaran" data-bs-profileimage="/adobe/dynamicmedia/deliver/dm-aid--37574025-984a-43a6-a0bb-a5a9771346c2/Chandra-leader.webp" class="leaderLink">
+                <img class="card-img-top main-img child" src="/adobe/dynamicmedia/deliver/dm-aid--9d74d4af-d749-4586-acac-f572c8d1719b/chandra-color-new.webp" alt="N Chandrasekaran" title="N Chandrasekaran"/>
+                <div class="d-none bioDesc"><p>Natarajan Chandrasekaran (Chandra) is the Chairman of Tata Sons, the holding company and promoter of all Tata Group companies.</p>
+<p>Chandra joined the Board of Tata Sons in October 2016 and was appointed Chairman in January 2017. He also chairs the boards of several group operating companies, including Tata Steel, Tata Motors, Tata Power, Air India, Tata Chemicals, Tata Consumer Products, Indian Hotel Company and Tata Consultancy Services (TCS) – of which he was the Chief Executive Officer from 2009-17.</p>
+<p>His appointment as Chairman of Tata Sons, followed a 30-year business career at TCS, which he joined from university. Chandra rose through the ranks at TCS to become the CEO and Managing Director of the leading global IT solution and consulting ﬁrm. Under his leadership, TCS generated total revenues of US $16.5 billion in 2015-16 and consolidated its position as the largest private sector employer in India and the country’s most valuable company.</p>
+<p>Since he has taken over as Chairman, Chandra has been driving transformation of the group towards digital, sustainability and supply chain resilience. The group has forayed into new businesses including electronics manufacturing, consumer internet platform and mobile technology for 5G in India. The Tata group has expanded its aviation presence with the acquisition of Air India and is building a large global airline. The group’s turnover stood at over US$125 billion with a market cap of US$311 billion as on 31 March 2022.</p>
+<p>In addition to his professional career at Tata, Chandra is on the International Advisory Council of Singapore’s Economic Development Board. He is the Chairman of Indian Institute of Management, Lucknow as well as the President of the Court at Indian Institute of Science, Bengaluru. He is the member of Bocconi&#39;s International Advisory Council and the Co-Chair of the India US CEO Forum. He is also on the Board of Governors of New York Academy of Sciences and has been elected as an international member of the United States National Academy of Engineering (NAE).</p>
+<p>Chandra was conferred with the Padma Bhushan, one of the highest civilian awards in India, in the field of trade and industry in 2022. Chandra has been awarded several honorary doctorates by leading Universities in India and internationally, including an honorary Doctor of Letters from Macquarie University, Australia, Doctor Honoris Causa by Nyenrode University, The Netherlands, honorary Doctor of Science by the Aligarh Muslim University, and Doctor of Letters from the Regional Engineering College, Trichy, Tamil Nadu, where he completed a Masters Degree in Computer Applications, before joining TCS in 1987.</p>
+<p>Chandra is also the author of Bridgital Nation, a groundbreaking book on harnessing technological disruptions to bring Indians closer to their dreams.</p>
+<p>Chandra is an avid photographer, and a passionate long-distance marathon runner. He is a Six Star Finisher of the World Marathon Majors and continues to champion fitness.</p>
+<p>Born in 1963, Chandra lives in Mumbai, with his wife Lalitha. </p>
+<p> </p>
+</div>
+                <div class="d-none bioPost">Chairman, Tata Sons</div>
+              </a>
+              <h2 class="text-center">N Chandrasekaran</h2>
+              <p>Chairman</p>
+            </div>
+          
+            <div class="leader-item">
+              <a href="#" data-bs-title="Campbell Wilson" data-bs-profileimage="/adobe/dynamicmedia/deliver/dm-aid--3731f75a-11cc-4d42-a851-ea4798b11c65/Campbell-leader.webp" class="leaderLink">
+                <img class="card-img-top main-img child" src="/adobe/dynamicmedia/deliver/dm-aid--72a07459-f167-4f37-9747-878d8582feed/campell-color-new.webp" alt="Campbell Wilson" title="Campbell Wilson"/>
+                <div class="d-none bioDesc"><p>Based in New Delhi, Mr. Wilson joined Air India in mid-2022 after 26 years with Singapore Airlines (SIA) working in various senior roles for both the flagship airline as well as Scoot, its wholly owned low-cost subsidiary of which he was the founding CEO. </p>
+<p>As CEO and MD, Mr. Wilson is leading Vihaan.ai, Air India’s comprehensive five-year program to transform the formerly state-owned carrier, now part of the Tata Group. into a world-class global airline with an Indian heart</p>
+<p>Air India’s transformation has already seen the airline place the largest single order for new aircraft in aviation history, comprising 470 wide- and narrow-body aircraft. It also entails a complete overhaul of equipment, product, technology, systems and culture, and dramatic network expansion.</p>
+<p>In addition to transformation of the flagship airline, Mr. Wilson is steering the integration of subsidiary airlines Air India Express and Air Asia India into a single low-cost carrier, and, subject to regulatory approval, the merger of Air India with Vistara, a full service airline co-owned by Tata and Singapore Airlines.</p>
+<p>To support the Group’s growth, Air India is also in the process of building a world-class Training Academy to provide pilots, cabin crew, engineers and a skilled workforce that will also support the Indian aviation ecosystem.</p>
+<p>Mr. Wilson (born July 1971 in Christchurch, New Zealand) began his career with SIA in New Zealand in 1996 after obtaining a Master of Commerce with 1st Class Honours in Business Administration from the University of Canterbury. He worked for SIA in Australia, Canada, Hong Kong and Japan before returning to Singapore in 2011 as the founding CEO of Scoot until 2016. He then served on SIA’s Management Committee as Senior Vice President, Sales &amp; Marketing, before returning for a second stint as the CEO of Scoot in 2020.</p>
+<p>Mr. Wilson is married with no children.</p>
+<p> </p>
+</div>
+                <div class="d-none bioPost">Chief Executive Officer &amp; Managing Director</div>
+              </a>
+              <h2 class="text-center">Campbell Wilson</h2>
+              <p>CEO &amp; MD</p>
+            </div>
+          
+        </div>
+      </div>
+    </div>
+  
+  
+  
+  
+  
+  
+
+
+
+
+  
+
+  <!-- Modal -->
+  <div class="modal fade" id="bioModal" tabindex="-1" aria-labelledby="bioModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-body">
+          <div class="bio-section"></div>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          <div class="row mobile-row-reverse">
+            <div class="col-12 col-md-6 justify-content-end d-flex flex-column bio-title-wrap">
+              <h2 id="bioTitle"></h2>
+              <p id="bioPost"></p>
+
+            </div>
+            <div class="col-12 col-md-6 bio-img-wrap">
+              <img id="bioImage" src="" alt="Leader Image"/></img>
+
+            </div>
+          </div>
+          <div id="bioDesc"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="cardImage text aem-GridColumn aem-GridColumn--default--12">
+  
+    
+    
+
+
+
+  
+
+  <!-- Card Carousel -->
+  
+  <!-- Grid Card -->
+  
+  <!-- STacked Card -->
+  
+  
+    <div class="container-bs management-grid">
+      <div class="section-img">
+        
+        <h4></h4>
+        <div class="leaders-container">
+          
+            <div class="leader-item">
+              <a href="#" data-bs-title="Sanjiv Mehta" data-bs-profileimage="/adobe/dynamicmedia/deliver/dm-aid--e83d8d13-9688-4c8d-b704-af9ab42f4f8e/Sanjiv-leader.webp" class="leaderLink">
+                <img class="card-img-top main-img child" src="/adobe/dynamicmedia/deliver/dm-aid--23130cb1-a910-4ea5-939f-1d83613f3771/sanjiv-color-new.webp" alt="Sanjiv Mehta" title="Sanjiv Mehta"/>
+                <div class="d-none bioDesc"><p>Mr. Sanjiv Mehta joined the Board as Non-Executive Independent Director from 9 March 2022.</p>
+<p>Mr Sanjiv Mehta (62) is the Chief Executive Officer &amp; Managing Director of Hindustan Unilever Limited (HUL), India&#39;s largest &#39;fast-moving consumer goods&#39; (FMCG) Company. As President, he heads Unilever&#39;s business in South Asia (India, Pakistan, Bangladesh, Sri Lanka &amp; Nepal). He is a member of the &#39;Unilever Leadership Executive&#39;, and the President Commissioner (Non-Executive Chairman) of Unilever Indonesia. During his nine years at the helm of Hindustan Unilever Limited, the Company&#39;s market capitalisation has increased from $17 billion to $75 billion, making HUL one of the most valuable companies in the country.</p>
+<p>Mr. Sanjiv Mehta is the Past President of FICCI (Federation of Indian Chambers of Commerce and Industry) during 2021-22, Director on the Indian School of Business Board, member of the Breach Candy Hospital Trust, and South Asia Advisory Board of Harvard Business School. He chairs Xynteo Vikaasa, a top Indian and MNC companies’ coalition.</p>
+<p>Mr. Sanjiv Mehta was conferred the honorary degree of ‘Doctor of Philosophy in Business Management by Xavier University (Xavier Institute of Management). He has received several personal recognitions, including the ‘Best CEO Multinational’ by Forbes, the ‘Management Man of the Year’ by Bombay Management Association, the ‘CA Business Leader’ by The Institute of Chartered Accountants of India, the ‘Best Transformational Leader’ by the Asian Centre for Corporate Governance and Sustainability, the ‘Business Leader of the Year’ by The Economic Times, ‘JRD Tata Corporate Leadership award’ by the All India Management Association, etc.</p>
+<p>Mr. Mehta graduated in Commerce and is a Member of the Institute of Chartered Accountants of India. He has also completed Advanced Management Program from Harvard Business School.</p>
+</div>
+                <div class="d-none bioPost">Independent Director</div>
+              </a>
+              <h2 class="text-center">Sanjiv Mehta</h2>
+              <p>Independent Director</p>
+            </div>
+          
+            <div class="leader-item">
+              <a href="#" data-bs-title="Alice Vaidyan" data-bs-profileimage="/adobe/dynamicmedia/deliver/dm-aid--89b92ff2-b56a-4968-920d-d10dbc04db40/Alice-leader.webp" class="leaderLink">
+                <img class="card-img-top main-img child" src="/adobe/dynamicmedia/deliver/dm-aid--c7aaca26-c141-4f65-8fd8-8292b6c3fc12/alice-color-new.webp" alt="Alice Vaidyan" title="Alice Vaidyan"/>
+                <div class="d-none bioDesc"><p>Mrs. Alice G. Vaidyan joined the Board as Non-Executive Independent Director from 9 March 2022.</p>
+<p>Mrs. Alice Vaidyan, former Chairman and Managing Director of General Insurance Corporation of India (GIC) and the First Lady CMD in the Indian Insurance industry has over 40 years of experience and is considered among the foremost experts in the insurance and reinsurance industry in India and across the globe. She has won several national and international awards.</p>
+<p>Mrs. Alice Vaidyan was the only Indian in Fortune’s Global list (2018) of 50 Most Powerful Women in Business. In April 2019, Mrs. Vaidyan was honoured with the Freedom of City of London in recognition of her work to promote insurance ties between India and London. She won the ET Prime Woman CEO of the Year award in 2019. Business Today recognised her as one of the 30 most powerful women in Indian business successively in 2016, 2017 and 2018. Fortune India announced her as the 4<sup>th</sup> most powerful woman in Business in 2018 and in 2019. ASSOCHAM honoured her with the Leadership Excellence Award in February 2019.</p>
+<p>Mrs. Alice G. Vaidyan has done Master of Arts (English Literature). She is a fellow member of the Insurance Institute of India and has completed Leadership Strategy Program from Harvard Business School.</p>
+</div>
+                <div class="d-none bioPost">Independent Director</div>
+              </a>
+              <h2 class="text-center">Alice Vaidyan</h2>
+              <p>Independent Director</p>
+            </div>
+          
+            <div class="leader-item">
+              <a href="#" data-bs-title="P.R. Ramesh" data-bs-profileimage="/adobe/dynamicmedia/deliver/dm-aid--733ddf3b-9920-411a-8353-d0f8f4b0de5e/Ramesh-leader.webp" class="leaderLink">
+                <img class="card-img-top main-img child" src="/adobe/dynamicmedia/deliver/dm-aid--e24f6851-9b82-4b48-8a01-984fc514e8e7/ramesh-color-new.webp" alt="P. R. Ramesh" title="P. R. Ramesh"/>
+                <div class="d-none bioDesc"><p>Mr. P.R. Ramesh joined the Board as Non-Executive Independent Director from 28 July 2022.</p>
+<p>Mr. Ramesh was the Chairman of Deloitte India and has over 40 years of experience. He also served as a member of Deloitte Global Board and Deloitte Asia Pacific Board. He has served clients in manufacturing, banking and financial services, technology, media, telecommunications, energy and resources and consumer business sectors throughout his professional career.</p>
+<p>Mr. Ramesh has been associated with various Regulatory bodies such as SEBI Committee on Disclosures and Accounting Standards, Committee for Reforming the Regulatory Environment for doing Business in India, set up by Government of India, Technical Committee to review the form and presentation of the Balance Sheet of the Reserve Bank of India, Insurance Regulatory and Development Authority Standing Committee on Accounting issues and invitee to the Committee set up by the Reserve Bank of India (‘RBI’) to assist in convergence to IFRS by banks and National Advisory Committee on Accounting Standards. He has also been member of Accounting Standards Board of ICAI, Vision and Restructuring Committee and Auditing Practicing Committee of ICAI and the Secretarial Standards Boards of the Institute of Company Secretaries of India.</p>
+<p>Mr. Ramesh is a regular speaker at various programmes and workshops conducted by ICAI, the Institute of Internal Auditors, RBI, CII, SEBI on the matters of professional interest. He has co-authored publication by CCH titled iGAAP – Financial Reporting Standards in India including a comparison with International Financial Reporting Standards (IFRS) and is a member of Board of Studies and the Faculty of Commerce of Osmania University.</p>
+<p>Mr. Ramesh graduated in Commerce and is a Fellow Member of the Institute of Chartered Accountants of India (ICAI).</p>
+</div>
+                <div class="d-none bioPost">Independent Director</div>
+              </a>
+              <h2 class="text-center">P.R. Ramesh</h2>
+              <p>Independent Director</p>
+            </div>
+          
+        </div>
+      </div>
+    </div>
+  
+  
+  
+  
+  
+  
+
+
+
+
+  
+
+  <!-- Modal -->
+  <div class="modal fade" id="bioModal" tabindex="-1" aria-labelledby="bioModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-body">
+          <div class="bio-section"></div>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          <div class="row mobile-row-reverse">
+            <div class="col-12 col-md-6 justify-content-end d-flex flex-column bio-title-wrap">
+              <h2 id="bioTitle"></h2>
+              <p id="bioPost"></p>
+
+            </div>
+            <div class="col-12 col-md-6 bio-img-wrap">
+              <img id="bioImage" src="" alt="Leader Image"/></img>
+
+            </div>
+          </div>
+          <div id="bioDesc"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="cardImage text aem-GridColumn aem-GridColumn--default--12">
+  
+    
+    
+
+
+
+  
+
+  <!-- Card Carousel -->
+  
+  <!-- Grid Card -->
+  
+  <!-- STacked Card -->
+  
+  
+    <div class="container-bs management-grid">
+      <div class="section-img">
+        
+        <h4>Executive Leadership Team</h4>
+        <div class="leaders-container">
+          
+            <div class="leader-item">
+              <a href="#" data-bs-title="Campbell Wilson" data-bs-profileimage="/adobe/dynamicmedia/deliver/dm-aid--3731f75a-11cc-4d42-a851-ea4798b11c65/Campbell-leader.webp" class="leaderLink">
+                <img class="card-img-top main-img child" src="/adobe/dynamicmedia/deliver/dm-aid--72a07459-f167-4f37-9747-878d8582feed/campell-color-new.webp" alt="Campbell Wilson" title="Campbell Wilson"/>
+                <div class="d-none bioDesc"><p>Based in New Delhi, Mr. Wilson joined Air India in mid-2022 after 26 years with Singapore Airlines (SIA) working in various senior roles for both the flagship airline as well as Scoot, its wholly owned low-cost subsidiary of which he was the founding CEO. </p>
+<p>As CEO and MD, Mr. Wilson is leading Vihaan.ai, Air India’s comprehensive five-year program to transform the formerly state-owned carrier, now part of the Tata Group. into a world-class global airline with an Indian heart</p>
+<p>Air India’s transformation has already seen the airline place the largest single order for new aircraft in aviation history, comprising 470 wide- and narrow-body aircraft. It also entails a complete overhaul of equipment, product, technology, systems and culture, and dramatic network expansion.</p>
+<p>In addition to transformation of the flagship airline, Mr. Wilson is steering the integration of subsidiary airlines Air India Express and Air Asia India into a single low-cost carrier, and, subject to regulatory approval, the merger of Air India with Vistara, a full service airline co-owned by Tata and Singapore Airlines.</p>
+<p>To support the Group’s growth, Air India is also in the process of building a world-class Training Academy to provide pilots,  cabin crew, engineers and a skilled workforce that will also support the Indian aviation ecosystem.</p>
+<p>Mr. Wilson (born July 1971 in Christchurch, New Zealand) began his career with SIA in New Zealand in 1996 after obtaining a Master of Commerce with 1st Class Honours in Business Administration from the University of Canterbury. He worked for SIA in Australia, Canada, Hong Kong and Japan before returning to Singapore in 2011 as the founding CEO of Scoot until 2016. He then served on SIA’s Management Committee as Senior Vice President, Sales &amp; Marketing, before returning for a second stint as the CEO of Scoot in 2020.</p>
+<p>Mr. Wilson is married with no children.</p>
+</div>
+                <div class="d-none bioPost">Chief Executive Officer &amp; Managing Director</div>
+              </a>
+              <h2 class="text-center">Campbell Wilson</h2>
+              <p>CEO &amp; MD</p>
+            </div>
+          
+            <div class="leader-item">
+              <a href="#" data-bs-title="Nipun Aggarwal " data-bs-profileimage="/adobe/dynamicmedia/deliver/dm-aid--a1d0af92-70c7-44ec-bf74-6f80634d1781/Nipun-leader.webp" class="leaderLink">
+                <img class="card-img-top main-img child" src="/adobe/dynamicmedia/deliver/dm-aid--491e85bc-5c18-4161-aaf7-87b53cde7aa2/nipun-variant.webp" alt="Nipun Aggrawal" title="Nipun Aggrawal"/>
+                <div class="d-none bioDesc"><p>Mr. Nipun Aggarwal joined Air India in January 2022 after leading the acquisition of Air India for Tata Sons. As Chief Commercial &amp; Transformation Officer, he now leads several important functions at Air India, including aircraft acquisition and financing, product development, strategy and planning, sales and marketing, loyalty, revenue management, network planning and scheduling, strategic procurement, strategic alliances and M&amp;A. He is at the forefront of driving transformation, change management and merger integration activities across the Air India group. Mr. Aggarwal is also the chairman of Air India SATS Airport Services Private Limited (AISATS) and a member of the board of directors for Air India Express, AIX Connect and Tata Electronics. </p>
+<p>Mr. Aggarwal has more than 28 years of experience across industries and has held multiple roles across corporate finance, M&amp;A, financing, strategy, business development and operations.</p>
+<p>Prior to Air India, Mr. Aggarwal worked as Senior Vice President at Tata Sons, where he played a pivotal role in the strategic transformation of several Tata group companies between 2017 and 2022 as part of the Group Chairman and Group CFO Office. Mr. Aggarwal led several marquee acquisitions and corporate restructuring projects at Tata Sons. He has also served on the board of several Tata group companies including Tata Housing, Tata Value Homes, Tata Projects, Tata Power Odisha Discoms and Tata Urban Infrastructure.</p>
+<p>Mr. Aggarwal has also worked in investment banking with Bank of America Merrill Lynch, in corporate banking at Standard Chartered Bank, and as Commercial Advisor with BP PLC. He started his career with Larsen &amp; Toubro as Graduate Engineer Trainee.</p>
+<p>He holds a Post Graduate Diploma in Management from IIM Calcutta and Bachelors in Electricals Engineering from Delhi College of Engineering. He likes to travel and play badminton in his free time. He is married and has two kids.</p>
+</div>
+                <div class="d-none bioPost">Chief Commercial &amp; Transformation Officer </div>
+              </a>
+              <h2 class="text-center">Nipun Aggarwal </h2>
+              <p><p>Chief Commercial &amp; Transformation Officer </p>
+</p>
+            </div>
+          
+            <div class="leader-item">
+              <a href="#" data-bs-title="Dr. Suresh Tripathi" data-bs-profileimage="/adobe/dynamicmedia/deliver/dm-aid--898014cc-2e40-41bf-bffc-0ed946209b21/Suresh-leader.webp" class="leaderLink">
+                <img class="card-img-top main-img child" src="/adobe/dynamicmedia/deliver/dm-aid--a0ef8bca-a47c-4800-abd2-ec3e53472c2d/suresh-color-new.webp" alt="Suresh Tripathi" title="Suresh Tripathi"/>
+                <div class="d-none bioDesc"><p>Dr. Suresh Dutt Tripathi, Chief Human Resources Officer, is an HR professional with varied industry experience. Before Air India, he was Vice President of Human Resources at Tata Steel.</p>
+<p>He has 40 years of HR experience across different industries—steel, chemical, IT, education—in both public and private sectors (SAIL, HCL Perot Systems, Mascon Global Ltd, SRF, Sri Educare and Tata Steel).</p>
+<p>Dr. Suresh has served on the board of directors for JUSCO (a subsidiary of Tata Steel) and Indian Iron &amp; Steel Sector Skill Council (IISSSC). He chaired the board of The European Centre for Executive Development, CEDEP (INSEAD, France).</p>
+<p>He also contributes as a member of various committees of CII and AIMA at the national level. With a master’s in physics from Delhi University and a PG Diploma in social work from the University of Kolkata, Dr. Suresh has also been trained at multiple schools of eminence including Cambridge, Oxford, Barkley, IIMs and IISc.</p>
+<p>Dr. Suresh has been conferred Ph.D. Honoris Causa, by Manav Rachna University for his contribution in the field of human resources management.</p>
+<p>A keen sports lover, Suresh is also a student pilot and loves visiting places and meeting people.</p>
+</div>
+                <div class="d-none bioPost">Chief Human Resources Officer </div>
+              </a>
+              <h2 class="text-center">Dr. Suresh Tripathi</h2>
+              <p><p>Chief Human Resources Officer</p>
+</p>
+            </div>
+          
+            <div class="leader-item">
+              <a href="#" data-bs-title="Vinod Hejmadi" data-bs-profileimage="/adobe/dynamicmedia/deliver/dm-aid--b5484f2d-ce0a-472c-9a34-588e114a63c9/Hejmadi-leader.webp" class="leaderLink">
+                <img class="card-img-top main-img child" src="/adobe/dynamicmedia/deliver/dm-aid--614b0ca0-dfbd-4722-9f5e-8e64debcf9fc/hmadi-color-new.webp" alt="Vinod Shankar Hejmadi" title="Vinod Shankar Hejmadi"/>
+                <div class="d-none bioDesc"><p>Mr. Vinod Hejmadi was named Air India’s Chief Financial Officer in April 2022, after over six years in his role as Director of Finance. Mr. Hejmadi has been with Air India for almost 35 years and has held roles across finance functions including revenue accounting, audit, insurance, commodity, hedging, strategic procurement—fuel, aircraft leasing, MIS and budget. He was on the board of directors at Air India until his appointment as CFO.</p>
+<p>Mr. Hejmadi has held leadership positions internationally, working as Finance Manager for Air India in Geneva and Chicago.</p>
+<p>Mr. Hejmadi was a central member of the management team who formulated the turn-around plan for Air India in 2012. He was also a key participant in the discussions and deliberations on the disinvestment of Air India as part of the Evaluation Sub-Committee (ESC) of the Government of India.</p>
+<p>Mr. Hejmadi is a rank holder and fellow member of the Institute of Chartered Accountants of India. He holds a graduate degree in Commerce.</p>
+<p>Mr. Hejmadi sits on the board of directors for Air India Express and Air India SATS(JV).</p>
+</div>
+                <div class="d-none bioPost">Chief Financial Officer</div>
+              </a>
+              <h2 class="text-center">Vinod Hejmadi</h2>
+              <p><p>Chief Financial Officer</p>
+</p>
+            </div>
+          
+            <div class="leader-item">
+              <a href="#" data-bs-title="Dr. Satya Ramaswamy" data-bs-profileimage="/adobe/dynamicmedia/deliver/dm-aid--745954c7-467d-4d1d-b3cb-0a7b19bc3fea/Satya-bio-updated.webp" class="leaderLink">
+                <img class="card-img-top main-img child" src="/adobe/dynamicmedia/deliver/dm-aid--eff4d433-b93a-41a5-9c00-912e4b2a8af3/Satya-new-updated.webp" alt="Satya Ramaswamy" title="Satya Ramaswamy"/>
+                <div class="d-none bioDesc"><p>Dr. Satya Ramaswamy is on a mission to make Air India the most technologically advanced airline in the world. He heads our Digital &amp; Technology organization that has twin responsibilities — owning Air India’s digital channels and helping all our departments deploy technologies to delight customers and achieve operational excellence. Dr. Satya has 30 years of software engineering, product management and business leadership experience in India and the United States. He views aviation as the greatest accomplishment of humankind and brings enthusiasm for the industry to his role at Air India. In previous roles, he has helped multiple leading global airlines execute digital transformation programs. An entrepreneurial leader who sets a fast pace for his organization, Dr. Satya is passionate about ‘zero to one’ technology journeys. An early adopter of digital, he has witnessed the evolution of mobile technologies, cloud, big data analytics, social media, and modern AI technologies from their earliest days. His current interests include the exploration of quantum computing to solve some of the hardest optimization challenges in the airline industry.</p>
+<p>Before joining Air India, Dr. Satya was Head of Strategic Initiatives at Tata Digital, where he was responsible for identifying and building products and systems that gave Tata Digital a competitive edge in the market. At Tata Consultancy Services, he helped build the digital services business from the ground up from 2010, supporting global customers across industries on digital reimagination journeys. Before TCS, Dr. Satya was the Founder &amp; CEO of Silicon Valley startup Brightfon, Inc., which he created in 2008 with the vision of bringing e-commerce like interactivity to the instore shopping experience, pioneering the use of mobile applications, cloud, big data and social media in physical retail. Prior to this, he was Head of Product Management for Boston area venture-capital funded startup Veveo, Inc., focused on web-scale video search, discovery, and mobile delivery. Earlier he was responsible for product management for mobile packet switching infrastructure in Motorola, Inc. While at Motorola, he contributed to North American telecom industry standards to bring Internet to mobile phones in late 1990s and early 2000s. He was part of the software engineering team at Motorola, working in late 1990s on some of the earliest digital mobile phones such as the digital StarTAC.</p>
+<p>Dr. Satya has a Ph.D in distributed computing from the Indian Institute of Technology, Madras and an MBA in finance and marketing from the Kellogg School of Management, Chicago. He has twelve granted US patents to his credit. He lives with his family in the San Francisco Bay Area and has deep connections with academic institutions and startups in the Silicon Valley tech ecosystem. Dr. Satya is a die-hard hockey fan and is very proud of Air India’s hockey legacy and its Olympians.</p>
+</div>
+                <div class="d-none bioPost">Chief Digital &amp; Technology Officer</div>
+              </a>
+              <h2 class="text-center">Dr. Satya Ramaswamy</h2>
+              <p>Chief Digital &amp;
+Technology Officer</p>
+            </div>
+          
+            <div class="leader-item">
+              <a href="#" data-bs-title="Captain R.S. Sandhu" data-bs-profileimage="/adobe/dynamicmedia/deliver/dm-aid--8a734b13-9a3d-4ca0-89b3-ce11dfe7f057/Sandhu-leader.webp" class="leaderLink">
+                <img class="card-img-top main-img child" src="/adobe/dynamicmedia/deliver/dm-aid--8efcb7c7-deef-4056-80bd-07e694b6f683/captain-r-sandhu-variant.webp" alt="Captain R Sandhu" title="Captain R Sandhu"/>
+                <div class="d-none bioDesc"><p>Captain RS Sandhu is an alumnus of The Lawrence School, Sanawar and has approximately 20,000 hours of incident/accident-free flight time. He has piloted a variety of aircraft types in his career, including the Boeing B737, Airbus 300, Airbus 320 family, and the B787 Dreamliner. He is also a Designated Examiner (DE).</p>
+<p>In his 41 years of experience in civil aviation, Captain RS Sandhu has worked as a pilot on short, medium and long-haul flights. He has also been successful in introducing new routes, centralizing and streamlining operations, and reducing pilot attrition.</p>
+<p>As Chief of Operations at Air India, he is responsible for heading departments including flight operations, standards, operations strategy and projects, technical training, central training and licensing, flight dispatch and crew management system (CMS), flight operations engineering, operations risk and compliance, and inflight services. He has successfully and cost effectively headed operations during various geopolitical scenarios and effectively managed operations during the Covid-19 pandemic.</p>
+<p>Captain Sandhu previously held various positions across Air India in training, flight safety and operations.</p>
+<p>Captain Sandhu&#39;s experience also includes policy making for civil aviation in India as a Flight Operations Inspector with the Directorate General of Civil Aviation (DGCA). In this role, he was instrumental in enabling the acceptance of type rating training organizations in regulatory standards and prepared a Civil Aviation Regulations (CAR) on the subject.</p>
+<p>He has completed various courses, including the EU-India In-flight Security, EU-India Flight Operations Inspector advanced course, ICAO-COSCAP - Operational Safety, ICAO-COSCAP - Safety Management Systems, and IOSA Awareness Training.</p>
+<p>Captain Sandhu lives in New Delhi with his wife and he’s blessed with two daughters who are based in the UK.</p>
+</div>
+                <div class="d-none bioPost">Chief of Operations</div>
+              </a>
+              <h2 class="text-center">Captain R.S. Sandhu</h2>
+              <p><p>Chief Operational Officer</p>
+</p>
+            </div>
+          
+            <div class="leader-item">
+              <a href="#" data-bs-title="Rajesh Dogra" data-bs-profileimage="/adobe/dynamicmedia/deliver/dm-aid--690cdcb5-8e62-4428-acc7-952fa42db7de/Dogra-leader.webp" class="leaderLink">
+                <img class="card-img-top main-img child" src="/adobe/dynamicmedia/deliver/dm-aid--54aa689b-22d0-4f17-9ecf-1136ca16bb9e/Rajesh-updated-img.webp" alt="Rajesh Dogra" title="Rajesh Dogra"/>
+                <div class="d-none bioDesc"><p>In his role as Chief Customer Experience and Ground Handling Officer, Mr. Rajesh Dogra is responsible for customer experience and airport operations for Air India globally. He is deeply engaged in service transformation initiatives at Air India and is building a robust airports operations and customer services framework which is enhancing customer experience at all touchpoints. Highly passionate about excellence in customer services, Mr. Dogra has spearheaded various large public services transformation programs in India as well as abroad and won many awards.</p>
+<p>Mr. Dogra has over 28 years of rich experience in large scale public services delivery, eGovernance, business operations, project management, IT driven service transformation and people management. He is a Tata veteran and before moving to Air India in August 2022, he was the Global Program Director of Passport Seva Program at Tata Consultancy Services (TCS). He set up and, for over 10 years, managed India&#39;s most iconic passport program for Ministry of External Affairs, which led to massive transformation of Indian passport services globally. During the initial phase of his career, Mr. Dogra worked with a public sector financial institution where he managed operations and service delivery for North India as well as for NRIs globally.</p>
+<p>Mr. Dogra completed his master’s degree in financial management from NMIMS Mumbai and graduated from Hansraj College, Delhi University. He has also completed several management development programs at TCS, IIM Ahmedabad, TMTC Pune and INSEAD. </p>
+</div>
+                <div class="d-none bioPost">Chief Customer Experience &amp; Ground Handling Officer </div>
+              </a>
+              <h2 class="text-center">Rajesh Dogra</h2>
+              <p><p>Chief Customer Experience &amp; Ground Handling Officer</p>
+</p>
+            </div>
+          
+        </div>
+      </div>
+    </div>
+  
+  
+  
+  
+  
+  
+
+
+
+
+  
+
+  <!-- Modal -->
+  <div class="modal fade" id="bioModal" tabindex="-1" aria-labelledby="bioModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-body">
+          <div class="bio-section"></div>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          <div class="row mobile-row-reverse">
+            <div class="col-12 col-md-6 justify-content-end d-flex flex-column bio-title-wrap">
+              <h2 id="bioTitle"></h2>
+              <p id="bioPost"></p>
+
+            </div>
+            <div class="col-12 col-md-6 bio-img-wrap">
+              <img id="bioImage" src="" alt="Leader Image"/></img>
+
+            </div>
+          </div>
+          <div id="bioDesc"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+    
+</div>
+
+    </div>
+
+    
+</div>
+<div class="container responsivegrid container-bs mx-fix aem-GridColumn aem-GridColumn--default--12">
+
+    
+    <div id="peopleOfIndia" class="cmp-container" style="background-color:#0E4688;">
+        
+
+
+<div class="aem-Grid aem-Grid--12 aem-Grid--default--12 aem-Grid--phone--12 ">
+    
+    <div class="text aem-GridColumn--default--none aem-GridColumn--phone--none aem-GridColumn--phone--12 aem-GridColumn aem-GridColumn--offset--phone--0 aem-GridColumn--offset--default--0 aem-GridColumn--default--4">
+<div data-cmp-data-layer="{&#34;text-68e9a64cd7&#34;:{&#34;@type&#34;:&#34;air-india/components/text&#34;,&#34;repo:modifyDate&#34;:&#34;2023-08-02T05:18:55Z&#34;,&#34;xdm:text&#34;:&#34;&lt;h3>PEOPLE OF&lt;/h3>\r\n&lt;h2>AIR INDIA&lt;/h2>\r\n&lt;p>&lt;b>Global Airline. Indian Heart.&lt;/b>&lt;/p>\r\n&lt;p>From booking to baggage claim and everything in between, we want you to love the Air India experience.&lt;/p>\r\n&#34;}}" id="text-68e9a64cd7" class="cmp-text">
+    <h3>PEOPLE OF</h3>
+<h2>AIR INDIA</h2>
+<p><b>Global Airline. Indian Heart.</b></p>
+<p>From booking to baggage claim and everything in between, we want you to love the Air India experience.</p>
+
+</div>
+
+    
+
+</div>
+<div class="container responsivegrid aem-GridColumn--default--none aem-GridColumn--phone--none aem-GridColumn--phone--12 aem-GridColumn aem-GridColumn--default--8 aem-GridColumn--offset--phone--0 aem-GridColumn--offset--default--0">
+
+    
+    <div id="container-038dff7698" class="cmp-container">
+        
+
+
+<div class="aem-Grid aem-Grid--8 aem-Grid--default--8 aem-Grid--phone--12 ">
+    
+    <div class="CustomImage aem-GridColumn--default--none aem-GridColumn--phone--none aem-GridColumn--phone--12 aem-GridColumn aem-GridColumn--default--5 aem-GridColumn--offset--phone--0 aem-GridColumn--offset--default--0">
+  <div class="image custom-img-comp-wrapper">
+    
+    
+      <img class="custom_image_component cmp-image__image lazyload" data-src="/adobe/dynamicmedia/deliver/dm-aid--9ac5980a-003d-4d02-a30c-f5c72f351fe3/people-of-air-india.webp" alt="People Of Air India" title="People Of Air India"/>
+    
+  </div>
+</div>
+<div class="container responsivegrid aem-GridColumn--default--none aem-GridColumn--phone--none aem-GridColumn--phone--12 aem-GridColumn aem-GridColumn--offset--phone--0 aem-GridColumn--default--3 aem-GridColumn--offset--default--0">
+
+    
+    <div id="peopleImg" class="cmp-container">
+        
+
+
+<div class="aem-Grid aem-Grid--3 aem-Grid--default--3 aem-Grid--phone--12 ">
+    
+    <div class="CustomImage aem-GridColumn--phone--12 aem-GridColumn aem-GridColumn--default--3">
+  <div class="image custom-img-comp-wrapper">
+    
+    
+      <img class="custom_image_component cmp-image__image lazyload" data-src="/adobe/dynamicmedia/deliver/dm-aid--576ca209-3614-4f31-969a-d4e7d9e16375/people-of-air-india-new.webp" alt="People of Air India" title="People of Air India"/>
+    
+  </div>
+</div>
+<div class="CustomImage aem-GridColumn--phone--12 aem-GridColumn aem-GridColumn--default--3">
+  <div class="image custom-img-comp-wrapper">
+    
+    
+      <img class="custom_image_component cmp-image__image lazyload" data-src="/adobe/dynamicmedia/deliver/dm-aid--7e61b874-46d3-4544-80c1-3b9830dde2ce/people-of-air-india-updated.webp" alt="People Of Air India" title="People Of Air India"/>
+    
+  </div>
+</div>
+
+    
+</div>
+
+    </div>
+
+    
+</div>
+<div class="text aem-GridColumn--phone--none aem-GridColumn--phone--12 aem-GridColumn aem-GridColumn--default--8 aem-GridColumn--offset--phone--0">
+<div data-cmp-data-layer="{&#34;text-bc97f80160&#34;:{&#34;@type&#34;:&#34;air-india/components/text&#34;,&#34;repo:modifyDate&#34;:&#34;2023-08-02T05:18:55Z&#34;,&#34;xdm:text&#34;:&#34;&lt;p>Our skilled, dedicated workforce from all over India and abroad is united by the spirit to connect homes and hearts, offering world class service to our global guests.&lt;/p>\r\n&#34;}}" id="text-bc97f80160" class="cmp-text">
+    <p>Our skilled, dedicated workforce from all over India and abroad is united by the spirit to connect homes and hearts, offering world class service to our global guests.</p>
+
+</div>
+
+    
+
+</div>
+
+    
+</div>
+
+    </div>
+
+    
+</div>
+
+    
+</div>
+
+    </div>
+
+    
+</div>
+<div class="container responsivegrid container-bs mx-fix aem-GridColumn--phone--none aem-GridColumn--phone--12 aem-GridColumn aem-GridColumn--default--12 aem-GridColumn--offset--phone--0">
+
+    
+    <div id="womenFly" class="cmp-container">
+        
+
+
+<div class="aem-Grid aem-Grid--12 aem-Grid--tablet--12 aem-Grid--default--12 aem-Grid--phone--12 ">
+    
+    <div class="text aem-GridColumn--tablet--12 aem-GridColumn--offset--tablet--0 aem-GridColumn--default--none aem-GridColumn--phone--none aem-GridColumn--phone--12 aem-GridColumn--tablet--none aem-GridColumn aem-GridColumn--default--5 aem-GridColumn--offset--phone--0 aem-GridColumn--offset--default--0">
+<div data-cmp-data-layer="{&#34;text-0656d53226&#34;:{&#34;@type&#34;:&#34;air-india/components/text&#34;,&#34;repo:modifyDate&#34;:&#34;2023-08-02T05:18:55Z&#34;,&#34;xdm:text&#34;:&#34;&lt;h4 style=\&#34;margin-bottom: 15.0px;\&#34;>Where Women Fly High&lt;/h4>\r\n&lt;p>We’re proud of the women in our workforce, excelling in every area from the boardroom to the cockpit. Women comprise over 30% of our total strength, including pilots (over 200), aircraft engineers, and senior directors.&lt;/p>\r\n&#34;}}" id="text-0656d53226" class="cmp-text">
+    <h4 style="	margin-bottom: 15.0px;
+">Where Women Fly High</h4>
+<p>We’re proud of the women in our workforce, excelling in every area from the boardroom to the cockpit. Women comprise over 30% of our total strength, including pilots (over 200), aircraft engineers, and senior directors.</p>
+
+</div>
+
+    
+
+</div>
+<div class="container responsivegrid container-bs aem-GridColumn--phone--none aem-GridColumn--phone--12 aem-GridColumn aem-GridColumn--default--12 aem-GridColumn--offset--phone--0">
+
+    
+    
+    
+    <div id="ai-swan" class="cmp-container">
+        
+        <div class="CustomImage">
+  <div class="image custom-img-comp-wrapper">
+    
+    
+      <img class="custom_image_component cmp-image__image lazyload" data-src="/adobe/dynamicmedia/deliver/dm-aid--be6cae3d-aa1f-4e24-aea8-e99ae99ddf69/where-women-fly-high.webp" alt="Where women Fly" title="Where women Fly"/>
+    
+  </div>
+</div>
+<div class="CustomImage">
+  <div class="image custom-img-comp-wrapper">
+    
+    
+      <img class="custom_image_component cmp-image__image lazyload" data-src="/adobe/dynamicmedia/deliver/dm-aid--c03904de-c25d-4c74-ac74-696a35589376/ai-swan.webp" alt="ai swan" title="ai swan"/>
+    
+  </div>
+</div>
+
+        
+    </div>
+
+</div>
+
+    
+</div>
+
+    </div>
+
+    
+</div>
+<div class="container responsivegrid aem-GridColumn aem-GridColumn--default--12">
+
+    
+    <div id="joinOurTeam" class="cmp-container" style="background-color:#EFF6FF;">
+        
+
+
+<div class="aem-Grid aem-Grid--12 aem-Grid--default--12 ">
+    
+    <div class="text aem-GridColumn aem-GridColumn--default--12">
+<div data-cmp-data-layer="{&#34;text-9e34066653&#34;:{&#34;@type&#34;:&#34;air-india/components/text&#34;,&#34;repo:modifyDate&#34;:&#34;2023-08-02T05:18:55Z&#34;,&#34;xdm:text&#34;:&#34;&lt;h3 style=\&#34;text-align: center;\&#34;>Join Our Team&lt;/h3>\r\n&lt;p style=\&#34;text-align: center;\&#34;>Join us as we unfold our Wings of Change&lt;/p>\r\n&#34;}}" id="text-9e34066653" class="cmp-text">
+    <h3 style="	text-align: center;
+">Join Our Team</h3>
+<p style="	text-align: center;
+">Join us as we unfold our Wings of Change</p>
+
+</div>
+
+    
+
+</div>
+<div class="button aem-GridColumn aem-GridColumn--default--12"><a id="view-careers" rel="nofollow" class="cmp-button" data-cmp-clickable data-cmp-data-layer="{&#34;view-careers&#34;:{&#34;@type&#34;:&#34;air-india/components/button&#34;,&#34;repo:modifyDate&#34;:&#34;2023-08-02T05:18:55Z&#34;,&#34;dc:title&#34;:&#34;View Careers&#34;,&#34;xdm:linkURL&#34;:&#34;https://careers.airindia.com&#34;}}" href="https://careers.airindia.com" target="_blank">
+    
+    
+
+    <span class="cmp-button__text">View Careers</span>
+</a>
+</div>
+
+    
+</div>
+
+    </div>
+
+    
+</div>
+<div class="container responsivegrid container-bs mx-fix aem-GridColumn aem-GridColumn--default--12">
+
+    
+    
+    
+    <div id="fleet" class="cmp-container">
+        
+        <div class="cardImage text">
+  
+    
+    
+
+
+
+  
+
+  <!-- Card Carousel -->
+  
+  <!-- Grid Card -->
+  
+  <!-- STacked Card -->
+  
+  
+  
+    <h2>Our Fleet</h2>
+    <p>Our growing fleet of Airbus and Boeing aircraft serves 102 domestic and international destinations.</p>
+    <div class="flight-cards">
+      
+        <div class="flight-card">
+          <div class="text-center flight-feet-title">A319</div>
+          <div>
+            <img class="card-img-top main-img child" src="/adobe/dynamicmedia/deliver/dm-aid--2db58411-1fad-4fb1-9ac4-85a57605f273/Flight-a-319-New.webp" alt="A 319" title="A 319"/>
+            <p>A319</p>
+          </div>
+        </div>
+      
+        <div class="flight-card">
+          <div class="text-center flight-feet-title">A320</div>
+          <div>
+            <img class="card-img-top main-img child" src="/adobe/dynamicmedia/deliver/dm-aid--cc7f07a3-680a-4841-9200-0be8a0612d4e/a320.webp" alt="A320" title="A320"/>
+            <p>A320</p>
+          </div>
+        </div>
+      
+        <div class="flight-card">
+          <div class="text-center flight-feet-title">A320neo</div>
+          <div>
+            <img class="card-img-top main-img child" src="/adobe/dynamicmedia/deliver/dm-aid--7b978cf0-2713-465c-a69c-f91d2d97408e/a320neo.webp" alt="A320neo" title="A320neo"/>
+            <p>A320neo</p>
+          </div>
+        </div>
+      
+        <div class="flight-card">
+          <div class="text-center flight-feet-title">A321</div>
+          <div>
+            <img class="card-img-top main-img child" src="/adobe/dynamicmedia/deliver/dm-aid--1d76c563-5066-49a2-a94f-b91bd592ec34/a321.webp" alt="A 321" title="A 321"/>
+            <p>A321</p>
+          </div>
+        </div>
+      
+        <div class="flight-card">
+          <div class="text-center flight-feet-title">A321neo</div>
+          <div>
+            <img class="card-img-top main-img child" src="/adobe/dynamicmedia/deliver/dm-aid--2c42415e-b67e-4494-99dd-b41e777053fe/a321neo.webp" alt="A321neo" title="A321neo"/>
+            <p>A321neo</p>
+          </div>
+        </div>
+      
+        <div class="flight-card">
+          <div class="text-center flight-feet-title">B787-8</div>
+          <div>
+            <img class="card-img-top main-img child" src="/adobe/dynamicmedia/deliver/dm-aid--0da320ce-56b0-4429-8a47-92d5cf1e4924/Flight-b787-800-New.webp" alt="B787-800" title="B787-800"/>
+            <p>B787-8</p>
+          </div>
+        </div>
+      
+        <div class="flight-card">
+          <div class="text-center flight-feet-title">B777-200LR</div>
+          <div>
+            <img class="card-img-top main-img child" src="/adobe/dynamicmedia/deliver/dm-aid--7e2ab583-e222-45a9-92d2-feb2d6f1612c/b777-200lr.webp" alt="B777-200LR" title="B777-200LR"/>
+            <p>B777-200LR</p>
+          </div>
+        </div>
+      
+        <div class="flight-card">
+          <div class="text-center flight-feet-title">B777-300ER</div>
+          <div>
+            <img class="card-img-top main-img child" src="/adobe/dynamicmedia/deliver/dm-aid--2d742d5f-98a7-4eef-a101-88f36c21915e/b777-300er.webp" alt="B777-300ER" title="B777-300ER"/>
+            <p>B777-300ER</p>
+          </div>
+        </div>
+      
+    </div>
+  
+  
+  
+  
+  
+
+
+
+
+  
+
+  <!-- Modal -->
+  <div class="modal fade" id="bioModal" tabindex="-1" aria-labelledby="bioModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-body">
+          <div class="bio-section"></div>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          <div class="row mobile-row-reverse">
+            <div class="col-12 col-md-6 justify-content-end d-flex flex-column bio-title-wrap">
+              <h2 id="bioTitle"></h2>
+              <p id="bioPost"></p>
+
+            </div>
+            <div class="col-12 col-md-6 bio-img-wrap">
+              <img id="bioImage" src="" alt="Leader Image"/></img>
+
+            </div>
+          </div>
+          <div id="bioDesc"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+        
+    </div>
+
+</div>
+<div class="image aem-GridColumn aem-GridColumn--default--12">
+
+  <div data-cmp-src="/adobe/dynamicmedia/deliver/dm-aid--688cce75-64bd-4a8b-8e4f-7db2ad8cefa6/staralliancebanner.png" data-cmp-hook-image="imageV3" class="cmp-image" itemscope itemtype="http://schema.org/ImageObject">
+ 
+     <img src="/adobe/dynamicmedia/deliver/dm-aid--688cce75-64bd-4a8b-8e4f-7db2ad8cefa6/staralliancebanner.png" class="cmp-image__image" itemprop="contentUrl" alt="Air India Star Alliance Member"/>
+ 
+ 
+ 
+</div>
+
+    
+</div>
+
+    
+</div>
+
+    </div>
+
+    
+</div>
+<div class="container responsivegrid aem-GridColumn aem-GridColumn--default--12">
+
+    
+    
+    
+    <div id="content" class="cmp-container">
+        
+        
+        
+    </div>
+
+</div>
+
+    
+</div>
+
+    </div>
+
+    
+</main>
+<footer class="experiencefragment aem-GridColumn aem-GridColumn--default--12">
+<div id="experiencefragment-2643e7e54a" class="cmp-experiencefragment cmp-experiencefragment--footer">
+
+
+    
+    
+    
+    <div id="footerAccordion" class="cmp-container">
+        
+        <div class="container responsivegrid container-bs">
+
+    
+    <div id="container-b24568c177" class="cmp-container">
+        
+
+
+<div class="aem-Grid aem-Grid--12 aem-Grid--tablet--12 aem-Grid--default--12 aem-Grid--phone--12 ">
+    
+    <div class="footerComponent aem-GridColumn--tablet--12 aem-GridColumn--offset--tablet--0 aem-GridColumn--default--none aem-GridColumn--phone--none aem-GridColumn--phone--12 aem-GridColumn aem-GridColumn--tablet--newline aem-GridColumn--offset--phone--0 aem-GridColumn--default--3 aem-GridColumn--offset--default--0">
+    <div class="accordion">
+        
+            
+                <h2 class="accordion-header" id="headingabout"> <button class="accordion-button " type="button" tabindex="-1" data-bs-toggle="collapse" data-bs-target="#about" aria-expanded="true" aria-controls="about"> ABOUT US </button> </h2>
+            
+            <div id="about" class="accordion-collapse collapse show" aria-label="headingabout" data-bs-parent="#footerAccordion">
+                <div class="accordion-body">
+                    <ul>
+                        
+                            <li>
+                                 <a aria-label="About Air India" href="/in/en/about-us.html" id="about0" class="list-item">About Air India</a> 
+                                
+                            </li>
+                        
+                            <li>
+                                 <a aria-label="Corporate Information" href="/in/en/corporate-information.html" id="about1" class="list-item">Corporate Information</a> 
+                                
+                            </li>
+                        
+                            <li>
+                                 <a aria-label="Press" href="/in/en/press.html" id="about2" class="list-item">Press</a> 
+                                
+                            </li>
+                        
+                            <li>
+                                
+                                
+                                    
+                                    
+                                     <a aria-label="Careers" href="javascript:void(0)" onclick="redirectToCareers()" rel="" id="about3" class="list-item">Careers</a> 
+                                
+                            </li>
+                        
+                            <li>
+                                 <a aria-label="Cargo Operations" href="/in/en/cargo-operations.html" id="about4" class="list-item">Cargo Operations</a> 
+                                
+                            </li>
+                        
+                    </ul>
+                </div>
+            </div>
+        
+        
+    </div>
+</div>
+<div class="footerComponent aem-GridColumn--tablet--12 aem-GridColumn--offset--tablet--0 aem-GridColumn--default--none aem-GridColumn--phone--none aem-GridColumn--phone--12 aem-GridColumn--tablet--none aem-GridColumn aem-GridColumn--offset--phone--0 aem-GridColumn--default--3 aem-GridColumn--offset--default--0">
+    <div class="accordion">
+        
+            
+                <h2 class="accordion-header" id="headingbook"> <button class="accordion-button collapsed" type="button" tabindex="-1" data-bs-toggle="collapse" data-bs-target="#book" aria-expanded="true" aria-controls="book"> BOOK &amp; MANAGE </button> </h2>
+            
+            <div id="book" class="accordion-collapse collapse " aria-label="headingbook" data-bs-parent="#footerAccordion">
+                <div class="accordion-body">
+                    <ul>
+                        
+                            <li>
+                                 <a aria-label="Search Flights" href="/in/en/book/search-flights.html" id="book0" class="list-item">Search Flights</a> 
+                                
+                            </li>
+                        
+                            <li>
+                                 <a aria-label="Manage Booking" href="/in/en/manage/booking.html" id="book1" class="list-item">Manage Booking</a> 
+                                
+                            </li>
+                        
+                            <li>
+                                 <a aria-label="Flight Schedule" href="/in/en/book/flight-schedule.html" id="book2" class="list-item">Flight Schedule</a> 
+                                
+                            </li>
+                        
+                    </ul>
+                </div>
+            </div>
+        
+        
+    </div>
+</div>
+<div class="footerComponent aem-GridColumn--tablet--12 aem-GridColumn--offset--tablet--0 aem-GridColumn--default--none aem-GridColumn--phone--none aem-GridColumn--phone--12 aem-GridColumn--tablet--none aem-GridColumn aem-GridColumn--offset--phone--0 aem-GridColumn--default--3 aem-GridColumn--offset--default--0">
+    <div class="accordion">
+        
+            
+                <h2 class="accordion-header" id="headingdestination"> <button class="accordion-button collapsed" type="button" tabindex="-1" data-bs-toggle="collapse" data-bs-target="#destination" aria-expanded="true" aria-controls="destination"> WHERE WE FLY </button> </h2>
+            
+            <div id="destination" class="accordion-collapse collapse " aria-label="headingdestination" data-bs-parent="#footerAccordion">
+                <div class="accordion-body">
+                    <ul>
+                        
+                            <li>
+                                 <a aria-label="Route Map" href="/in/en/destinations/route-map.html" id="destination0" class="list-item">Route Map</a> 
+                                
+                            </li>
+                        
+                            <li>
+                                 <a aria-label="Nonstop Flights" href="/in/en/destinations/non-stop-international-flights.html" id="destination1" class="list-item">Nonstop Flights</a> 
+                                
+                            </li>
+                        
+                            <li>
+                                 <a aria-label="Popular Flights" href="/in/en/destinations/newlaunch.html" id="destination2" class="list-item">Popular Flights</a> 
+                                
+                            </li>
+                        
+                            <li>
+                                 <a aria-label="Partner Airlines" href="/in/en/destinations/partner-airlines.html" id="destination3" class="list-item">Partner Airlines</a> 
+                                
+                            </li>
+                        
+                    </ul>
+                </div>
+            </div>
+        
+        
+    </div>
+</div>
+<div class="footerComponent aem-GridColumn--tablet--12 aem-GridColumn--offset--tablet--0 aem-GridColumn--default--none aem-GridColumn--phone--none aem-GridColumn--phone--12 aem-GridColumn--tablet--none aem-GridColumn aem-GridColumn--offset--phone--0 aem-GridColumn--default--3 aem-GridColumn--offset--default--0">
+    <div class="accordion">
+        
+            
+                <h2 class="accordion-header" id="headingtravel"> <button class="accordion-button collapsed" type="button" tabindex="-1" data-bs-toggle="collapse" data-bs-target="#travel" aria-expanded="true" aria-controls="travel"> PREPARE TO TRAVEL </button> </h2>
+            
+            <div id="travel" class="accordion-collapse collapse " aria-label="headingtravel" data-bs-parent="#footerAccordion">
+                <div class="accordion-body">
+                    <ul>
+                        
+                            <li>
+                                 <a aria-label="Baggage" href="/in/en/travel-information/baggage-guidelines.html" id="travel0" class="list-item">Baggage</a> 
+                                
+                            </li>
+                        
+                            <li>
+                                 <a aria-label="Airport information" href="/in/en/travel-information/airport-information.html" id="travel1" class="list-item">Airport information</a> 
+                                
+                            </li>
+                        
+                            <li>
+                                 <a aria-label="Travel with Children, Pets" href="/in/en/travel-information/first-time-flyers.html" id="travel2" class="list-item">Travel with Children, Pets</a> 
+                                
+                            </li>
+                        
+                            <li>
+                                 <a aria-label="Visas &amp; Documents" href="/in/en/travel-information/visa-documents.html" id="travel3" class="list-item">Visas &amp; Documents</a> 
+                                
+                            </li>
+                        
+                            <li>
+                                 <a aria-label="Health &amp; Medical Assistance" href="/in/en/travel-information/health-medical-assistance.html" id="travel4" class="list-item">Health &amp; Medical Assistance</a> 
+                                
+                            </li>
+                        
+                    </ul>
+                </div>
+            </div>
+        
+        
+    </div>
+</div>
+
+    
+</div>
+
+    </div>
+
+    
+</div>
+<div class="container responsivegrid container-bs">
+
+    
+    <div id="container-b1a02d55e6" class="cmp-container">
+        
+
+
+<div class="aem-Grid aem-Grid--12 aem-Grid--tablet--12 aem-Grid--default--12 aem-Grid--phone--12 ">
+    
+    <div class="footerComponent aem-GridColumn--tablet--12 aem-GridColumn--offset--tablet--0 aem-GridColumn--default--none aem-GridColumn--phone--none aem-GridColumn--phone--12 aem-GridColumn--tablet--none aem-GridColumn aem-GridColumn--offset--phone--0 aem-GridColumn--default--3 aem-GridColumn--offset--default--0">
+    <div class="accordion">
+        
+            
+                <h2 class="accordion-header" id="headingexperience"> <button class="accordion-button collapsed" type="button" tabindex="-1" data-bs-toggle="collapse" data-bs-target="#experience" aria-expanded="true" aria-controls="experience"> AIR INDIA EXPERIENCE </button> </h2>
+            
+            <div id="experience" class="accordion-collapse collapse " aria-label="headingexperience" data-bs-parent="#footerAccordion">
+                <div class="accordion-body">
+                    <ul>
+                        
+                            <li>
+                                 <a aria-label="At The Airport" href="/in/en/experience/airport.html" id="experience0" class="list-item">At The Airport</a> 
+                                
+                            </li>
+                        
+                            <li>
+                                 <a aria-label="In The Air" href="/in/en/experience/in-air.html" id="experience1" class="list-item">In The Air</a> 
+                                
+                            </li>
+                        
+                            <li>
+                                 <a aria-label="Our Fleet" href="/in/en/experience/airindia-fleet.html" id="experience2" class="list-item">Our Fleet</a> 
+                                
+                            </li>
+                        
+                    </ul>
+                </div>
+            </div>
+        
+        
+    </div>
+</div>
+<div class="footerComponent aem-GridColumn--tablet--12 aem-GridColumn--offset--tablet--0 aem-GridColumn--default--none aem-GridColumn--phone--none aem-GridColumn--phone--12 aem-GridColumn--tablet--none aem-GridColumn aem-GridColumn--offset--phone--0 aem-GridColumn--default--3 aem-GridColumn--offset--default--0">
+    <div class="accordion">
+        
+            
+                <h2 class="accordion-header" id="headingloyalty"> <button class="accordion-button collapsed" type="button" tabindex="-1" data-bs-toggle="collapse" data-bs-target="#loyalty" aria-expanded="true" aria-controls="loyalty"> LOYALTY </button> </h2>
+            
+            <div id="loyalty" class="accordion-collapse collapse " aria-label="headingloyalty" data-bs-parent="#footerAccordion">
+                <div class="accordion-body">
+                    <ul>
+                        
+                            <li>
+                                 <a aria-label="About Flying Returns" href="/in/en/flying-returns/about.html" id="loyalty0" class="list-item">About Flying Returns</a> 
+                                
+                            </li>
+                        
+                            <li>
+                                 <a aria-label="Points Calculator" href="/in/en/flying-returns/points-calculator.html" id="loyalty1" class="list-item">Points Calculator</a> 
+                                
+                            </li>
+                        
+                            <li>
+                                 <a aria-label="Earn Points" href="/in/en/flying-returns/earn-points.html" id="loyalty2" class="list-item">Earn Points</a> 
+                                
+                            </li>
+                        
+                            <li>
+                                 <a aria-label="Spend Points" href="/in/en/flying-returns/spend-points.html" id="loyalty3" class="list-item">Spend Points</a> 
+                                
+                            </li>
+                        
+                            <li>
+                                 <a aria-label="Flying Returns FAQ" href="/in/en/flying-returns/faqs.html" id="loyalty4" class="list-item">Flying Returns FAQ</a> 
+                                
+                            </li>
+                        
+                    </ul>
+                </div>
+            </div>
+        
+        
+    </div>
+</div>
+<div class="footerComponent aem-GridColumn--tablet--12 aem-GridColumn--offset--tablet--0 aem-GridColumn--default--none aem-GridColumn--phone--none aem-GridColumn--phone--12 aem-GridColumn--tablet--none aem-GridColumn aem-GridColumn--offset--phone--0 aem-GridColumn--default--3 aem-GridColumn--offset--default--0">
+    <div class="accordion">
+        
+            
+                <h2 class="accordion-header" id="headingsupport"> <button class="accordion-button collapsed" type="button" tabindex="-1" data-bs-toggle="collapse" data-bs-target="#support" aria-expanded="true" aria-controls="support"> SUPPORT </button> </h2>
+            
+            <div id="support" class="accordion-collapse collapse " aria-label="headingsupport" data-bs-parent="#footerAccordion">
+                <div class="accordion-body">
+                    <ul>
+                        
+                            <li>
+                                 <a aria-label="Contact" href="/in/en/customer-support.html" id="support0" class="list-item">Contact</a> 
+                                
+                            </li>
+                        
+                            <li>
+                                 <a aria-label="Frequently Asked Questions" href="/in/en/frequently-asked-questions.html" id="support1" class="list-item">Frequently Asked Questions</a> 
+                                
+                            </li>
+                        
+                            <li>
+                                 <a aria-label="Grievance Resolution" href="/in/en/customer-support/grievance-resolution.html" id="support2" class="list-item">Grievance Resolution</a> 
+                                
+                            </li>
+                        
+                    </ul>
+                </div>
+            </div>
+        
+        
+    </div>
+</div>
+<div class="footerComponent aem-GridColumn--tablet--12 aem-GridColumn--offset--tablet--0 aem-GridColumn--default--none aem-GridColumn--phone--none aem-GridColumn--phone--12 aem-GridColumn--tablet--none aem-GridColumn aem-GridColumn--offset--phone--0 aem-GridColumn--default--3 aem-GridColumn--offset--default--0">
+    <div class="accordion">
+        
+        
+            <div class="accordion-header" id="headingappLinks"> <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#appLinks" aria-expanded="true" aria-controls="appLinks" tabindex="-1"> Air India  App </div>
+            </h2>
+            <div id="appLinks" class="accordion-collapse collapse show" aria-labelledby="headingappLinks" data-bs-parent="#footerAccordion">
+                <div class="accordion-body">
+                    <p class="footer-subtitle">Download the app to book and manage your flights on the go.
+                     <a aria-label="Learn more" href="/in/en/app-features.html" class="subtitle_learn_more">Learn more</a> 
+                    
+                    </p>
+                    
+                        
+                            <a href="https://apps.apple.com/us/app/air-india/id932302964" id="appLinks0" class="icon-img" target="_blank" rel="nofollow"> <img class="img-app-store lazyload" data-src="/content/dam/air-india/icons/Appstore.svg" alt="App Store" title="App Store" width="143" height="43"/></a>
+                        
+                        
+                    
+                        
+                            <a href="https://play.google.com/store/apps/details?id=com.bets.airindia.ui" id="appLinks1" class="icon-img" target="_blank" rel="nofollow"> <img class="img-app-store lazyload" data-src="/content/dam/air-india/icons/google-play.svg" alt="Google Play" title="Google Play" width="143" height="43"/></a>
+                        
+                        
+                    
+                </div>
+            </div>
+        
+    </div>
+</div>
+<div class="separator aem-GridColumn aem-GridColumn--default--12">
+<div id="separator-0ab11fabfb" class="cmp-separator">
+    <hr class="cmp-separator__horizontal-rule"/>
+</div></div>
+
+    
+</div>
+
+    </div>
+
+    
+</div>
+<div class="container responsivegrid container-bs">
+
+    
+    <div id="socialWrap" class="cmp-container">
+        
+
+
+<div class="aem-Grid aem-Grid--12 aem-Grid--tablet--12 aem-Grid--default--12 aem-Grid--phone--12 ">
+    
+    <div class="footerComponent aem-GridColumn--tablet--12 aem-GridColumn--offset--tablet--0 aem-GridColumn--default--none aem-GridColumn--phone--none aem-GridColumn--phone--12 aem-GridColumn--tablet--none aem-GridColumn aem-GridColumn--offset--phone--0 aem-GridColumn--default--3 aem-GridColumn--offset--default--0">
+    <div class="accordion">
+        
+            
+            <div id="Panel-1" class="accordion-collapse collapse " aria-label="headingPanel-1" data-bs-parent="#footerAccordion">
+                <div class="accordion-body">
+                    <ul>
+                        
+                            <li>
+                                 <a aria-label="Sitemap" href="/in/en/sitemap.html" id="Panel-10" class="list-item">Sitemap</a> 
+                                
+                            </li>
+                        
+                            <li>
+                                 <a aria-label="Terms &amp; Conditions" href="/in/en/terms-and-condition.html" id="Panel-11" class="list-item">Terms &amp; Conditions</a> 
+                                
+                            </li>
+                        
+                            <li>
+                                 <a aria-label="Privacy Policy" href="/in/en/privacy-policy.html" id="Panel-12" class="list-item">Privacy Policy</a> 
+                                
+                            </li>
+                        
+                    </ul>
+                </div>
+            </div>
+        
+        
+    </div>
+</div>
+<div class="footerComponent aem-GridColumn--tablet--12 aem-GridColumn--offset--tablet--0 aem-GridColumn--default--none aem-GridColumn--phone--none aem-GridColumn--phone--12 aem-GridColumn--tablet--none aem-GridColumn aem-GridColumn--offset--phone--0 aem-GridColumn--default--3 aem-GridColumn--offset--default--0">
+    <div class="accordion">
+        
+            
+            <div id="Panel-2" class="accordion-collapse collapse " aria-label="headingPanel-2" data-bs-parent="#footerAccordion">
+                <div class="accordion-body">
+                    <ul>
+                        
+                            <li>
+                                 <a aria-label="Cookie Policy" href="/in/en/cookie-policy.html" id="Panel-20" class="list-item">Cookie Policy</a> 
+                                
+                            </li>
+                        
+                            <li>
+                                
+                                
+                                     <a aria-label="Conditions of Carriage" href="/content/dam/air-india/pdfs/general-conditions-of-carriage-for-passengers-and-baggage.pdf" id="Panel-21" class="list-item" target="_blank">Conditions of Carriage</a> 
+                                    
+                                    
+                                
+                            </li>
+                        
+                            <li>
+                                
+                                
+                                     <a aria-label="Domestic Fares" href="/content/dam/air-india/pdfs/TARIFF-SHEET-AS-ON-08th-Sept-2023.pdf" id="Panel-22" class="list-item" target="_blank">Domestic Fares</a> 
+                                    
+                                    
+                                
+                            </li>
+                        
+                    </ul>
+                </div>
+            </div>
+        
+        
+    </div>
+</div>
+<div class="footerComponent aem-GridColumn--tablet--12 aem-GridColumn--offset--tablet--0 aem-GridColumn--default--none aem-GridColumn--phone--none aem-GridColumn--tablet--none aem-GridColumn aem-GridColumn--phone--4 aem-GridColumn--offset--phone--0 aem-GridColumn--default--3 aem-GridColumn--offset--default--0">
+    <div class="accordion">
+        
+            
+            <div id="Panel-3" class="accordion-collapse collapse " aria-label="headingPanel-3" data-bs-parent="#footerAccordion">
+                <div class="accordion-body">
+                    <ul>
+                        
+                            <li>
+                                 <a aria-label="Travel Agents " href="/in/en/travel-agents.html" id="Panel-30" class="list-item">Travel Agents </a> 
+                                
+                            </li>
+                        
+                            <li>
+                                 <a aria-label="GST" href="/in/en/gst.html" id="Panel-31" class="list-item">GST</a> 
+                                
+                            </li>
+                        
+                            <li>
+                                 <a aria-label="Passenger Charter" href="/in/en/passenger-charter.html" id="Panel-32" class="list-item">Passenger Charter</a> 
+                                
+                            </li>
+                        
+                    </ul>
+                </div>
+            </div>
+        
+        
+    </div>
+</div>
+<div class="footerComponent aem-GridColumn--tablet--12 aem-GridColumn--offset--tablet--0 aem-GridColumn--default--none aem-GridColumn--phone--none aem-GridColumn--phone--12 aem-GridColumn--tablet--none aem-GridColumn aem-GridColumn--offset--phone--0 aem-GridColumn--default--3 aem-GridColumn--offset--default--0">
+    <div class="accordion">
+        
+        
+            <div class="accordion-header" id="headingsocial"> <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#social" aria-expanded="true" aria-controls="social" tabindex="-1"> FOLLOW US ON </div>
+            </h2>
+            <div id="social" class="accordion-collapse collapse show" aria-labelledby="headingsocial" data-bs-parent="#footerAccordion">
+                <div class="accordion-body">
+                    <p class="footer-subtitle">
+                    
+                    
+                        <a target="_blank" class="subtitle_learn_more"></a>
+                    
+                    </p>
+                    
+                        
+                            <a href="https://www.linkedin.com/company/airindialimited/" id="social0" class="icon-img" target="_blank" rel="nofollow"> <img class="img-app-store lazyload" data-src="/content/dam/air-india/icons/LinkedIn.svg" alt="Linked In" title="Linked In" width="143" height="43"/></a>
+                        
+                        
+                    
+                        
+                            <a href="https://twitter.com/airindia" id="social1" class="icon-img" target="_blank" rel="nofollow"> <img class="img-app-store lazyload" data-src="/content/dam/air-india/icons/twitter-new.svg" alt="Twitter" title="Twitter" width="143" height="43"/></a>
+                        
+                        
+                    
+                        
+                            <a href="https://www.youtube.com/channel/UCnfpyluc2VymxpxWpiL9Oaw" id="social2" class="icon-img" target="_blank" rel="nofollow"> <img class="img-app-store lazyload" data-src="/content/dam/air-india/icons/Youtube.svg" alt="youtube" title="youtube" width="143" height="43"/></a>
+                        
+                        
+                    
+                        
+                            <a href="https://www.facebook.com/AirIndia/" id="social3" class="icon-img" target="_blank" rel="nofollow"> <img class="img-app-store lazyload" data-src="/content/dam/air-india/icons/facebook.svg" alt="facebook" title="facebook" width="143" height="43"/></a>
+                        
+                        
+                    
+                        
+                            <a href="https://www.instagram.com/airindia" id="social4" class="icon-img" target="_blank" rel="nofollow"> <img class="img-app-store lazyload" data-src="/content/dam/air-india/icons/instagram.svg" alt="Instagram" title="Instagram" width="143" height="43"/></a>
+                        
+                        
+                    
+                </div>
+            </div>
+        
+    </div>
+</div>
+<div class="container responsivegrid aem-GridColumn aem-GridColumn--default--12">
+
+    
+    
+    
+    <div id="container-a246b3907b" class="cmp-container">
+        
+        <div class="footerComponent">
+    <div class="accordion">
+        
+        
+    </div>
+</div>
+<div class="separator">
+<div id="separator-aba6424bf9" class="cmp-separator">
+    <hr class="cmp-separator__horizontal-rule"/>
+</div></div>
+
+        
+    </div>
+
+</div>
+
+    
+</div>
+
+    </div>
+
+    
+</div>
+<div class="container responsivegrid container-bs">
+
+    
+    <div id="copyright" class="cmp-container">
+        
+
+
+<div class="aem-Grid aem-Grid--12 aem-Grid--default--12 aem-Grid--phone--12 ">
+    
+    <div class="CustomImage aem-GridColumn aem-GridColumn--default--12">
+  <div class="image custom-img-comp-wrapper">
+    
+    
+      <img class="custom_image_component cmp-image__image lazyload" data-src="/adobe/dynamicmedia/deliver/dm-aid--9a0ece9d-fff6-410a-88b1-9042bf596c53/Footer-Logo.svg" alt="footer-logo" title="footer-logo"/>
+    
+  </div>
+</div>
+<div class="container responsivegrid aem-GridColumn--default--none aem-GridColumn--phone--none aem-GridColumn--phone--12 aem-GridColumn--default--9 aem-GridColumn aem-GridColumn--offset--phone--0 aem-GridColumn--offset--default--0">
+
+    
+    <div id="tatasection" class="cmp-container">
+        
+
+
+<div class="aem-Grid aem-Grid--9 aem-Grid--default--9 aem-Grid--phone--12 ">
+    
+    <div class="CustomImage aem-GridColumn--default--none aem-GridColumn--phone--none aem-GridColumn--phone--12 aem-GridColumn aem-GridColumn--offset--phone--0 aem-GridColumn--default--3 aem-GridColumn--offset--default--0">
+  <div class="image custom-img-comp-wrapper">
+    
+      
+        <a href="https://www.tata.com/" target="_blank" rel="nofollow">
+          <img class="custom_image_component cmp-image__image lazyload" data-src="/adobe/dynamicmedia/deliver/dm-aid--cd35d748-7e8d-40c6-92ea-2d9c144d7038/Tata_logo.svg" alt="Tata Logo" title="Tata Logo"/>
+        </a>
+      
+      
+    
+    
+  </div>
+</div>
+
+    
+</div>
+
+    </div>
+
+    
+</div>
+
+    
+</div>
+
+    </div>
+
+    
+</div>
+<div class="airindiaChatBot">
+  
+    
+<script src="/etc.clientlibs/air-india/components/AIComponents/airindiaChatBot/clientlibs.lc-22733445fa7071594026d4b1ec6efbdc-lc.min.js"></script>
+
+
+
+
+  
+</div>
+<div class="ghost">
+
+</div>
+<div class="container responsivegrid container-bs">
+
+    
+    
+    
+    <div id="copytext" class="cmp-container">
+        
+        <div class="separator">
+<div id="separator-cea222f9c1" class="cmp-separator">
+    <hr class="cmp-separator__horizontal-rule"/>
+</div></div>
+<div class="text textCSS">
+<div data-cmp-data-layer="{&#34;copyrightTxt&#34;:{&#34;@type&#34;:&#34;air-india/components/text&#34;,&#34;repo:modifyDate&#34;:&#34;2023-05-31T06:00:32Z&#34;,&#34;xdm:text&#34;:&#34;&lt;p style=\&#34;text-align: center;\&#34;>Copyright © 2023 Air India Ltd.&lt;/p>\r\n&lt;p style=\&#34;text-align: center;\&#34;>All rights reserved. Use of this website indicates your compliance with our Privacy Policy, Conditions of Carriage, Terms and Conditions.&lt;/p>\r\n&#34;}}" id="copyrightTxt" class="cmp-text">
+    <p style="	text-align: center;
+">Copyright © 2023 Air India Ltd.</p>
+<p style="	text-align: center;
+">All rights reserved. Use of this website indicates your compliance with our Privacy Policy, Conditions of Carriage, Terms and Conditions.</p>
+
+</div>
+
+    
+
+</div>
+
+        
+    </div>
+
+</div>
+<div class="cookieConsent"><div id="cookie-title" style="display: none;">We use cookies!</div>
+<div id="cookie-description" style="display: none;"><p>Hi, this website uses essential cookies to ensure its proper operation and tracking cookies to understand how you interact with it. The latter will be set only after consent.</p>
+</div>
+<div id="cookie-button1" style="display: none;">Accept all</div>
+<div id="cookie-button2" style="display: none;">Reject all</div></div>
+
+        
+    </div>
+
+</div>
+
+    
+</footer>
+
+    
+</div>
+
+    </div>
+
+    
+</div>
+
+
+            
+    
+    <script src="/etc.clientlibs/air-india/clientlibs/clientlib-site.lc-d91e521f6b4cc63fe57186d1b172e7e9-lc.min.js"></script>
+
+
+    
+
+    
+    <script defer src="/etc.clientlibs/core/wcm/components/commons/site/clientlibs/container.lc-0a6aff292f5cc42142779cde92054524-lc.min.js"></script>
+<script defer src="/etc.clientlibs/clientlibs/granite/jquery/granite/csrf.lc-652a558c3774088b61b0530c184710d1-lc.min.js"></script>
+<script defer src="/etc.clientlibs/air-india/clientlibs/clientlib-base.lc-513776bd2b0579df9d8e02f65096d531-lc.min.js"></script>
+
+
+
+<script>
+    let urlParams = window.location.origin;
+    getText(
+        urlParams +
+        "/content/air-india/in/en/cookie-policy/jcr:content/root/container/container/envconfig.model.json"
+    );
+    let envParam = {};
+    async function getText(file) {
+        await fetch(file)
+            .then((res) => res.json())
+            .then((response) => {
+                envParam = response;
+            });
+        if (envParam.environment === "prod") {
+            window.dataLayer = window.dataLayer || [];
+            function gtag() {
+                dataLayer.push(arguments);
+            }
+
+            gtag("consent", "default", {
+                ad_storage: "denied",
+                analytics_storage: "denied",
+                wait_for_update: 1500,
+            });
+
+            (function (w, d, s, l, i) {
+                w[l] = w[l] || [];
+                w[l].push({
+                    "gtm.start": new Date().getTime(),
+                    event: "gtm.js",
+                });
+                var f = d.getElementsByTagName(s)[0],
+                    j = d.createElement(s),
+                    dl = l != "dataLayer" ? "&l=" + l : "";
+                j.async = true;
+                j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
+                f.parentNode.insertBefore(j, f);
+            })(window, document, "script", "dataLayer", "GTM-TNLHQDB");
+
+            {
+
+            }
+
+            (function (i, s, o, g, r, a, m) {
+                i["GoogleAnalyticsObject"] = r;
+                (i[r] =
+                    i[r] ||
+                    function () {
+                        (i[r].q = i[r].q || []).push(arguments);
+                    }),
+                    (i[r].l = 1 * new Date());
+                (a = s.createElement(o)), (m = s.getElementsByTagName(o)[0]);
+                a.async = 1;
+                a.src = g;
+                m.parentNode.insertBefore(a, m);
+            })(
+                window,
+                document,
+                "script",
+                "https://www.google-analytics.com/analytics.js",
+                "ga"
+            );
+            ga("send", "pageview");
+
+            var _siteID = "AEM_NEW_SITE";
+            ga("set", "dimension1", _siteID);
+
+            function consentGrantedforad() {
+                gtag("consent", "update", {
+                    ad_storage: "granted",
+                    analytics_storage: "denied",
+                });
+            }
+            function consentGrantedforga() {
+                gtag("consent", "update", {
+                    ad_storage: "denied",
+                    analytics_storage: "granted",
+                });
+            }
+            function consentGrantedforboth() {
+                gtag("consent", "update", {
+                    ad_storage: "granted",
+                    analytics_storage: "granted",
+                });
+            }
+            function getCookie(name) {
+                let cookie = {};
+                document.cookie.split(";").forEach(function (el) {
+                    let [k, v] = el.split("=");
+                    cookie[k.trim()] = v;
+                });
+                return cookie[name];
+            }
+
+            var cookieCategories = [];
+            setTimeout(function () {
+                cookieCategories = JSON.parse(getCookie("ai_cookie")).categories;
+                for (let i = 0; i < cookieCategories.length; i++) {
+                    if ((cookieCategories[i] == "enable_performance" ||
+                        cookieCategories[i] == "enable_targeting") && cookieCategories[i] == "enable_targeting") { consentGrantedforboth(); }
+                    else {
+                        if (cookieCategories[i] == "enable_targeting") { consentGrantedforad(); } else if (
+                            cookieCategories[i] == "enable_analytics" || cookieCategories[i] == "enable_performance") { consentGrantedforga(); }
+                    }
+                }
+            }, 5000);
+        }
+    }
+</script>
+    
+
+    
+
+    
+    
+
+        
+    </body>
+</html>

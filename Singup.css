@@ -1,0 +1,54 @@
+
+body{
+background-image: url(background.jpg);
+
+}
+.Singup{
+    width: 382px;
+    overflow: hidden;
+    margin: auto;
+    margin: 20 0 0 450px;
+    padding: 40px 80px 80px 80px ;
+    background-color: #c6bea8;
+    border: 3px solid gray;
+border-radius: 15px;
+}
+h2{
+    text-align: center;
+    color: #277582;
+    padding:0px 0px 40px 0px ;
+    margin:10px 0px 0px 0px;
+}
+label{
+    color: #594d4d;
+    font-size: 16px;
+}
+#continue{
+    width: 250px;
+    height: 30px;
+    border: none;
+    border-radius: 3px;
+    padding-left: 8px;
+    margin-top: 7px;
+}
+p{
+    font-size: 13px;
+}
+#continue{
+    width: 250px;
+    height: 30px;
+    border:none;
+    border-radius: 17px;
+    padding-left: 7px;
+    color: none;
+    background-color: rgb(246, 240, 229);
+}
+.otpgenerator{
+    width: 100px;
+    height: 30px;
+    border:none;
+    border-radius: 17px;
+    padding-left: 7px;
+    color: none;
+    background-color: rgb(90, 88, 83);
+}
